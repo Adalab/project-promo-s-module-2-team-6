@@ -1,0 +1,16 @@
+// la función acepta un número de pixels (los que vayamos a usar). Y nos devuelve el cálculo en unidades `rem` :)
+@function rem($pixels) {
+  @return ($pixels / $defaultFontSize * 1rem);
+}
+
+@mixin tablet() {
+  @media all and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media all and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}

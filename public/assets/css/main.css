@@ -160,6 +160,19 @@ table {
     width: 419px; } }
 
 /*DESKTOP VERSION*/
+@media all and (min-width: 1200px) {
+  .header {
+    height: 111px;
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: flex-start; }
+  .image-aweprocar {
+    height: 50px;
+    width: 201px;
+    margin-top: 31px;
+    margin-bottom: 30px;
+    margin-left: 40px; } }
+
 .footer {
   height: 110px;
   padding-top: 18px;

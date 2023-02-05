@@ -132,4 +132,62 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.sectionfill {
+  display: flex;
+  border-top: 0.1rem black solid;
+  margin: 0 2rem 2.5rem 2rem;
+  justify-content: space-between; }
+  .sectionfill__div {
+    display: flex; }
+    .sectionfill__div__icon {
+      color: #e17334;
+      font-size: 1.8rem;
+      margin: 1rem 1rem 0 0; }
+    .sectionfill__div__title {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      color: #54585a;
+      font-family: "Open Sans", sans-serif;
+      margin-top: 1rem;
+      font-weight: 600; }
+  .sectionfill__arrow {
+    margin-top: 1rem;
+    font-size: 1.8rem; }
+
+.fill {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem 0 2rem; }
+  .fill__title {
+    color: #114e4e;
+    font-size: 1.4rem;
+    margin: 2rem 0 0.7rem 0;
+    font-family: "Open Sans", sans-serif; }
+  .fill__input {
+    border: 1px solid #a2deaf;
+    height: 3rem; }
+  .fill__button {
+    color: white;
+    background-color: #e17334;
+    height: 3rem;
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 3px; }
+  .fill__rectangle {
+    border: 1px solid #a2deaf;
+    height: 3rem;
+    width: 3rem; }
+
+::-moz-placeholder {
+  color: #c5c5c5;
+  font-size: 1.4em; }
+
+::placeholder {
+  color: #c5c5c5;
+  font-size: 1.4em; }
+
 /*# sourceMappingURL=main.css.map */

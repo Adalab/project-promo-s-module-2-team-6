@@ -1,0 +1,77 @@
+.sectionfill {
+    display: flex;
+    border-top: 0.1rem black solid;
+    margin: 0 2rem 2.5rem 2rem;
+    justify-content: space-between;
+
+    &__div {
+        display: flex;
+
+    &__icon {
+        color:$colorDull-orange;
+        font-size: 1.8rem;
+        margin:1rem 1rem 0 0 ;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: $colorGunmetal;
+        font-family: $font-Open;
+        margin-top: 1rem;
+        font-weight: 600;
+    }
+  }
+    &__arrow {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+        
+    }
+
+      
+}
+
+.fill {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 0 2rem;
+
+    &__title {
+        color:#114e4e;
+        font-size: 1.4rem;
+        margin: 2rem 0 0.7rem 0;
+        font-family: $font-Open;
+      
+    }
+
+    &__input {
+        border: 1px solid $colorHospital-green;
+        height: 3rem;
+
+
+    }
+
+    &__button {
+        color: white;
+        background-color: $colorDull-orange;
+        height: 3rem;
+        width: 14rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: $font-Open;
+        border-radius: 3px;
+}
+
+    &__rectangle {
+        border: 1px solid $colorHospital-green;
+            height: 3rem;
+            width: 3rem;
+    }
+}
+
+::placeholder {
+    color: #c5c5c5;
+    font-size: 1.4em;
+}

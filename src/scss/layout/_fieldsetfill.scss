@@ -1,6 +1,6 @@
 .sectionfill {
     display: flex;
-    border-top: 0.1rem black solid;
+    border-top: 0.1rem $colorWhite-three solid;
     margin: 0 2rem 2.5rem 2rem;
     justify-content: space-between;
 
@@ -25,6 +25,7 @@
     &__arrow {
         margin-top: 1rem;
         font-size: 1.8rem;
+        color:$colorGunmetal;
         
     }
 
@@ -51,6 +52,10 @@
 
     }
 
+    &__section {
+            
+        display: flex;
+
     &__button {
         color: white;
         background-color: $colorDull-orange;
@@ -62,6 +67,7 @@
         font-size: 14px;
         font-family: $font-Open;
         border-radius: 3px;
+        margin-right: 2rem;
 }
 
     &__rectangle {
@@ -71,7 +77,9 @@
     }
 }
 
+}
+
 ::placeholder {
     color: #c5c5c5;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }

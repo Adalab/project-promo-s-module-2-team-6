@@ -1,0 +1,68 @@
+.sectionshare {
+    display:flex ;
+    border-top: 0.1rem $colorWhite-three solid;
+        margin: 2rem 2rem 2.5rem 2rem;
+        justify-content: space-between;
+
+
+        &__div {
+            display: flex;
+
+       
+
+            &__icon {
+                    color: $colorDull-orange;
+                        font-size: 1.8rem;
+                        margin: 1rem 1rem 0 0;
+            }
+
+
+            &__title{
+                font-size: 1.8rem;
+                    text-transform: uppercase;
+                    color: $colorGunmetal;
+                    font-family: $font-Open;
+                    font-weight: 600;
+                    margin-top: 1rem;
+            }
+
+         }
+
+    &__arrow {
+        margin-top: 1rem;
+            font-size: 1.8rem;
+            color: $colorGunmetal;
+    }
+}
+
+
+
+.share {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__button {
+        color: white;
+            background-color: $colorDull-orange;
+            height: 5rem;
+            width: 19.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-family: $font-Open;
+            font-weight: 600;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            
+          
+    }
+
+    &__icon {
+        margin-right: 1rem;
+
+    }
+}

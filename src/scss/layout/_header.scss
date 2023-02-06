@@ -1,2 +1,58 @@
 .header {
+
+    height: 158px;
+    background-color: $colorWhite-four;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-end;
+    justify-content:end;
+    
+}
+
+.image-aweprocar {
+    height: 63px;
+    width: 250px;
+}
+
+/* TABLET VERSION */
+@media all and (min-width: 768px) {
+
+    .header {
+
+        height: 455px;
+        background-color: $colorWhite-four;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: flex-end;
+        justify-content:end;
+    }
+
+    .image-aweprocar {
+        height: 105px;
+        width: 419px;
+    }
+
+}
+
+
+/*DESKTOP VERSION*/
+@media all and (min-width: 1200px) {
+
+    .header {
+        height: 111px;
+        background-color: $colorWhite-two;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+
+    .image-aweprocar {
+        height: 50px;
+        width: 201px;
+        margin-top: 31px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
 }

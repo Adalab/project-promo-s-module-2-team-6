@@ -1,43 +1,45 @@
-.sectionshare {
-    display:flex ;
-    border-top: 0.1rem $colorWhite-three solid;
-        margin: 2rem 2rem 2.5rem 2rem;
-        justify-content: space-between;
+.share {
 
+            &__legend {
+                    display: flex;
+                    border-top: 0.1rem $colorWhite-three solid;
+                    margin: 2rem 2rem 2.5rem 2rem;
+                    justify-content: space-between;
+            
+                                &__div {
+                                    display: flex;
 
-        &__div {
-            display: flex;
+                        
+                                            &__icon {
+                                                color: $colorDull-orange;
+                                                font-size: 1.8rem;
+                                                margin: 1rem 1rem 0 0;
+                                            }
+                                
+                                
+                                            &__title {
+                                                font-size: 1.8rem;
+                                                text-transform: uppercase;
+                                                color: $colorGunmetal;
+                                                font-family: $font-Open;
+                                                font-weight: 600;
+                                                margin-top: 1rem;
+                                            }
+                                
+                                        }
 
-       
-
-            &__icon {
-                    color: $colorDull-orange;
-                        font-size: 1.8rem;
-                        margin: 1rem 1rem 0 0;
-            }
-
-
-            &__title{
-                font-size: 1.8rem;
-                    text-transform: uppercase;
-                    color: $colorGunmetal;
-                    font-family: $font-Open;
-                    font-weight: 600;
+                &__arrow {
                     margin-top: 1rem;
-            }
+                        font-size: 1.8rem;
+                        color: $colorGunmetal;
+                }
 
-         }
-
-    &__arrow {
-        margin-top: 1rem;
-            font-size: 1.8rem;
-            color: $colorGunmetal;
-    }
 }
 
 
+}
 
-.share {
+.share__div {
 
     display: flex;
     justify-content: center;
@@ -57,6 +59,7 @@
             font-weight: 600;
             border-radius: 12px;
             margin-bottom: 3rem;
+            box-shadow: 0 1px 6px 0 $colorBlack;
             
           
     }
@@ -66,3 +69,97 @@
 
     }
 }
+
+.sharenone {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 2.5rem 2rem;
+ 
+
+    &__button {
+            color: white;
+            background-color: $colorWhite;
+            height: 5rem;
+            width: 19.9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-family: $font-Open;
+            font-weight: 600;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+    
+    
+        }
+    
+        &__icon {
+            margin-right: 1rem;
+    
+        }
+
+    &__section {
+        border-top: 0.1rem $colorWhite-three solid;
+        border-bottom: 0.1rem $colorWhite-three solid;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__title {
+            
+                color: $colorGunmetal;
+                font-family: $font-Open;
+                font-weight: 600;
+                margin-top: 2rem;
+                font-size: 1.8rem;
+            }
+
+
+        &__a {
+                color:$colorDull-orange;
+                text-decoration: none;
+                margin-top: 0.5rem;
+                font-family: OpenSans;
+                font-size: 1.2rem;
+                font-weight: 600;
+
+
+                }
+
+        &__button {
+            color: white;
+            width: 18.1rem;
+            height: 3rem;
+            background-color:$colorAzure;
+            margin: 1.3rem 0 3rem 0;
+            padding: 0.3rem 0.9rem 0.6rem 1.05rem;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+            box-shadow: 0 0 4px 0 black;
+            font-size: 1.4rem;
+            font-family: OpenSans;
+            font-weight: 200;
+        }
+
+        &__icon {
+            margin-right: 1rem;
+        }
+
+
+  }  }    
+
+
+
+
+
+
+

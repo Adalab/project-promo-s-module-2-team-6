@@ -1,0 +1,94 @@
+.preview {
+    background-color: $colorSilver;
+    padding: 4rem;
+
+    &__btn {
+        width: 6.5rem;
+        padding: 0.7rem;
+        border-radius: 1.5rem;
+        border: 0.1rem solid $colorLight-khaki;
+        margin-bottom: 2rem;
+    }
+
+    &__btn-icon {
+        color: $colorGunmetal;
+        font-size: 1.2 rem;
+    }
+
+    &__btn-reset {
+        text-decoration: none;
+        font-family: $font-Open;
+        font-size: 1.2rem;
+        color: $colorGunmetal;
+    }
+}
+
+.card {
+    background-color: $colorWhite-two;
+    height: 32rem;
+
+    &__cont1 {
+        padding: 1.5rem 0 1rem 2rem;
+        
+        &-name{
+            font-size: 1.8rem;
+            font-family: $font-Montserrat;
+            font-weight: bold;
+            color: $colorDark-green-blue;
+            line-height: 1.5;
+        }
+        &-employ {
+            font-size: 1.6rem;
+            font-family: $font-Montserrat;
+            font-weight: bold;
+            color: $colorGunmetal;
+        }
+    }
+
+    &__cont2-img {
+        width: 100%;
+        height: 62%;
+        //background-image: url(https://w7.pngwing.com/pngs/181/221/png-transparent-child-cartoon-illustration-cute-cartoon-children-decoration-cartoon-character-comics-album.png);
+        background-image: url(https://previews.123rf.com/images/pandavector/pandavector1610/pandavector161000417/63719642-mu%C3%B1eca-icono-negro-ilustraci%C3%B3n-para-la-web-y-m%C3%B3vil-.jpg);
+        background-size: cover;
+    }
+
+    &__cont3 {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-evenly;
+    }
+}
+
+.card__icon {
+    display: inline-block;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 0.1rem solid $colorHospital-green ;
+    margin-left: 1rem;
+    border-radius: 50%;
+    text-align: center;    
+
+    &-phone{
+        color: $colorDark-green-blue;
+        font-size: 1.8rem;
+        padding: 0.5rem;
+    }
+    &-envelope {
+        color: $colorDark-green-blue;
+        font-size: 1.8rem;
+        padding: 0.5rem;
+    }
+    &-linkedin {
+        color: $colorDark-green-blue;
+        font-size: 1.8rem;
+        padding: 0.5rem;
+    }
+    &-github {
+        color: $colorDark-green-blue;
+        font-size: 1.8rem;
+        padding: 0.5rem;
+    }
+}

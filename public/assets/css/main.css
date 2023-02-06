@@ -173,6 +173,77 @@ table {
     margin-bottom: 30px;
     margin-left: 40px; } }
 
+.preview {
+  background-color: #bfcdd0;
+  padding: 4rem; }
+  .preview__btn {
+    width: 6.5rem;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    border: 0.1rem solid #f9f4dc;
+    margin-bottom: 2rem; }
+  .preview__btn-icon {
+    color: #54585a;
+    font-size: 1.2 rem; }
+  .preview__btn-reset {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    color: #54585a; }
+
+.card {
+  background-color: #fff;
+  height: 32rem; }
+  .card__cont1 {
+    padding: 1.5rem 0 1rem 2rem; }
+    .card__cont1-name {
+      font-size: 1.8rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #114e4e;
+      line-height: 1.5; }
+    .card__cont1-employ {
+      font-size: 1.6rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #54585a; }
+  .card__cont2-img {
+    width: 100%;
+    height: 62%;
+    background-image: url(https://previews.123rf.com/images/pandavector/pandavector1610/pandavector161000417/63719642-mu%C3%B1eca-icono-negro-ilustraci%C3%B3n-para-la-web-y-m%C3%B3vil-.jpg);
+    background-size: cover; }
+  .card__cont3 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-evenly; }
+
+.card__icon {
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 0.1rem solid #a2deaf;
+  margin-left: 1rem;
+  border-radius: 50%;
+  text-align: center; }
+  .card__icon-phone {
+    color: #114e4e;
+    font-size: 1.8rem;
+    padding: 0.5rem; }
+  .card__icon-envelope {
+    color: #114e4e;
+    font-size: 1.8rem;
+    padding: 0.5rem; }
+  .card__icon-linkedin {
+    color: #114e4e;
+    font-size: 1.8rem;
+    padding: 0.5rem; }
+  .card__icon-github {
+    color: #114e4e;
+    font-size: 1.8rem;
+    padding: 0.5rem; }
+
 .sectionfill {
   display: flex;
   border-top: 0.1rem #d8d8d8 solid;

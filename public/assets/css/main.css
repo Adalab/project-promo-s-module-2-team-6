@@ -245,7 +245,7 @@ table {
     padding: 0.5rem; }
 
 .desing__head {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -262,6 +262,9 @@ table {
     font-size: 1.8rem;
     font-family: "Open Sans", sans-serif;
     font-weight: bold; }
+  .desing__head-arrow {
+    color: #54585a;
+    font-size: 1.8rem; }
 
 .desing__contCol {
   padding: 0 2rem 1rem 3.5rem;

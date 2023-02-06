@@ -132,4 +132,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.main__h1 {
+  font-family: "Merriweather", serif;
+  font-size: 19.2px;
+  color: #e17334; }
+
 /*# sourceMappingURL=main.css.map */

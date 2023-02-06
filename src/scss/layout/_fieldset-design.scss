@@ -1,0 +1,76 @@
+.desing__head {
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    &-icon {
+        color: $colorDull-orange;
+        font-size: 1.8rem;
+    }
+    &-title {
+        color: $colorGunmetal;
+        font-size: 1.8rem;
+        font-family: $font-Open;
+        font-weight: bold;
+    }
+
+}
+
+.desing__contCol {
+    padding: 0 2rem 1rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.palet__color {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+
+.desing__color {
+    font-size: 1.4 rem;
+    font-family: $font-Open;
+    color: $colorGunmetal;
+}
+.contain__col {
+    width: 3rem;
+    height: 2.5rem;
+}
+
+.col1 {
+    background-color: $colorDark-green-blue;
+}
+.col2 {
+    background-color: $colorDirty-blue;
+}
+.col3 {
+    background-color: $colorHospital-green;
+}
+.col4 {
+    background-color: $colorDried-blood;
+}
+.col5 {
+    background-color: $colorRusty-red;
+}
+.col6 {
+    background-color: $colorTomato;
+}
+.col7 {
+    background-color: $colorSlate;
+}
+.col8 {
+    background-color: $colorFaded-orange;
+}
+.col9 {
+    background-color: $colorLight-grey-blue;
+}

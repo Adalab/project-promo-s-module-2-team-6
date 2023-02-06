@@ -173,7 +173,6 @@ table {
     margin-bottom: 30px;
     margin-left: 40px; } }
 
-<<<<<<< HEAD
 .preview {
   background-color: #bfcdd0;
   padding: 4rem; }
@@ -245,10 +244,74 @@ table {
     font-size: 1.8rem;
     padding: 0.5rem; }
 
-.sectionfill {
-=======
+.desing__head {
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .desing__head-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem; }
+  .desing__head-icon {
+    color: #e17334;
+    font-size: 1.8rem; }
+  .desing__head-title {
+    color: #54585a;
+    font-size: 1.8rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold; }
+
+.desing__contCol {
+  padding: 0 2rem 1rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.palet__color {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem; }
+
+.desing__color {
+  font-size: 1.4 rem;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a; }
+
+.contain__col {
+  width: 3rem;
+  height: 2.5rem; }
+
+.col1 {
+  background-color: #114e4e; }
+
+.col2 {
+  background-color: #438792; }
+
+.col3 {
+  background-color: #a2deaf; }
+
+.col4 {
+  background-color: #420101; }
+
+.col5 {
+  background-color: #bd1010; }
+
+.col6 {
+  background-color: #e95626; }
+
+.col7 {
+  background-color: #3e5b65; }
+
+.col8 {
+  background-color: #eab052; }
+
+.col9 {
+  background-color: #a0c0cf; }
+
 .fill__legend {
->>>>>>> 6bdaa5e3e2c2ec986d00bf22f124e2ca95681b19
   display: flex;
   border-top: 0.1rem #d8d8d8 solid;
   margin: 0 2rem 2.5rem 2rem;
@@ -356,7 +419,6 @@ table {
   .share__div__icon {
     margin-right: 1rem; }
 
-<<<<<<< HEAD
 .sharenone {
   display: flex;
   flex-direction: column;
@@ -418,7 +480,7 @@ table {
       font-weight: 200; }
     .sharenone__section__icon {
       margin-right: 1rem; }
-=======
+
 .main {
   display: flex;
   flex-direction: column;
@@ -456,7 +518,6 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center; }
->>>>>>> ba7f4abab92737fb4955250f1ff7c24972cd8fdc
 
 .footer {
   height: 110px;

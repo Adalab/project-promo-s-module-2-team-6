@@ -1,38 +1,41 @@
-.sectionfill {
-    display: flex;
-    border-top: 0.1rem $colorWhite-three solid;
-    margin: 0 2rem 2.5rem 2rem;
-    justify-content: space-between;
+.fill {
 
-    &__div {
-        display: flex;
+                &__legend {
+                display: flex;
+                border-top: 0.1rem $colorWhite-three solid;
+                margin: 0 2rem 2.5rem 2rem;
+                justify-content: space-between;
 
-    &__icon {
-        color:$colorDull-orange;
-        font-size: 1.8rem;
-        margin:1rem 1rem 0 0 ;
-    }
+                    &__div {
+                        display: flex;
 
-    &__title {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        color: $colorGunmetal;
-        font-family: $font-Open;
-        margin-top: 1rem;
-        font-weight: 600;
-    }
-  }
-    &__arrow {
-        margin-top: 1rem;
-        font-size: 1.8rem;
-        color:$colorGunmetal;
-        
-    }
+                            &__icon {
+                                color:$colorDull-orange;
+                                font-size: 1.8rem;
+                                margin:1rem 1rem 0 0 ;
+                            }
 
-      
+                            &__title {
+                                font-size: 1.8rem;
+                                text-transform: uppercase;
+                                color: $colorGunmetal;
+                                font-family: $font-Open;
+                                margin-top: 1rem;
+                                font-weight: 600;
+                            }
+
+                        }
+ 
+            &__arrow {
+                margin-top: 1rem;
+                font-size: 1.8rem;
+                color:$colorGunmetal;
+                
+            } }
+ 
 }
 
-.fill {
+.fill__div {
     display: flex;
     flex-direction: column;
     margin: 0 2rem 0 2rem;
@@ -68,6 +71,7 @@
         font-family: $font-Open;
         border-radius: 3px;
         margin-right: 2rem;
+        box-shadow: 0 0 4px 0 black;
 }
 
     &__rectangle {

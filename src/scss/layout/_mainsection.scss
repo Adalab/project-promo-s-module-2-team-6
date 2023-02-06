@@ -1,5 +1,33 @@
-.main__h1 {
-    font-family: $font-Merri;
-    font-size: 19.2px;
-    color: $colorDull-orange;
+.main {
+    display: flex;
+    flex-direction: column;
+
+    &__h1 {
+        font-family: $font-Merri;
+        font-size: 19.2px;
+        color: $colorDull-orange;
+        margin: 0 auto;
+        }
+        
+        &__p {
+        
+            font-family: $font-Open;
+            font-size: 12.8px;
+            color: $colorDark-green-blue;
+            margin: 0 20px;
+            text-align: center;
+        }
+        
+        &__rectangle {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 20px;
+        
+        
+        }
+        
+        &__btn {
+            margin: 0 auto;
+        
+        }
 }

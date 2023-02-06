@@ -279,6 +279,27 @@ table {
   .share__icon {
     margin-right: 1rem; }
 
+.main {
+  display: flex;
+  flex-direction: column; }
+  .main__h1 {
+    font-family: "Merriweather", serif;
+    font-size: 19.2px;
+    color: #e17334;
+    margin: 0 auto; }
+  .main__p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12.8px;
+    color: #114e4e;
+    margin: 0 20px;
+    text-align: center; }
+  .main__rectangle {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px; }
+  .main__btn {
+    margin: 0 auto; }
+
 .footer {
   height: 110px;
   padding-top: 18px;

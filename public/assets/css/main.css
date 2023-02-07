@@ -508,6 +508,12 @@ table {
     border-radius: 4px;
     margin: 40px 30px;
     padding: 20px; }
+    .main__rectangle__element {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main__rectangle__element__icon {
+        color: orange; }
   .main__btn {
     margin: 0 auto;
     background-color: #438792;
@@ -517,10 +523,6 @@ table {
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     color: #fff; }
-  .main__rectangle__element {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
 
 .footer {
   height: 110px;

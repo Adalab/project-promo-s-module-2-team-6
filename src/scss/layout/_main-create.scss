@@ -1,6 +1,42 @@
+.main-create {
+    background-image: linear-gradient(to bottom, $colorWhite-four, $colorWhite-two 9%);
+
+    @media all and (min-width: 768px) {
+        background-image: linear-gradient(to bottom, $colorWhite-four, $colorWhite-two 9%);
+          border: blueviolet solid 2px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2rem 4rem ;
+        }
+}
+
+.form {
+padding: 2rem 2rem 0 2rem;
+
+@media all and (min-width: 768px) {
+        width: 40rem;
+        padding: 0 3rem 0 0;
+    }
+
+}
+
+
 .preview {
     background-color: $colorSilver;
     padding: 4rem;
+    
+
+    @media all and (min-width: 768px) {
+            width: 40vw;
+            height: 81.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            border-radius: 0.6rem;
+        }
 
     &__btn {
         width: 6.5rem;
@@ -27,6 +63,10 @@
     background-color: $colorWhite-two;
     height: 32rem;
     width: 24rem;
+
+    @media all and (min-width: 768px) {
+            border-radius: 0.2rem;
+        }
 
     &__cont1 {
         padding: 1.5rem 0 1rem 2rem;

@@ -491,7 +491,8 @@ table {
   display: flex;
   flex-direction: column;
   background-color: #f5f5f5;
-  padding-top: 140px; }
+  padding-top: 36px;
+  align-items: center; }
   .main__h1 {
     font-family: "Merriweather", serif;
     font-size: 19.2px;
@@ -508,10 +509,14 @@ table {
   .main__rectangle {
     display: flex;
     justify-content: space-around;
-    margin: 20px 30px;
+    margin: 40px 30px;
     padding: 10px;
     border-radius: 4x;
     border: solid 1.6px #e17334; }
+    @media all and (min-width: 768px) {
+      .main__rectangle {
+        max-width: 500px;
+        margin-bottom: 250px; } }
   .main__btn {
     margin: 0 auto;
     background-color: #438792;
@@ -527,7 +532,8 @@ table {
     align-items: center;
     justify-content: center;
     width: 60px;
-    height: 48.8px; }
+    height: 48.8px;
+    padding: 0 15px; }
     .main__rectangle__element__img::before {
       color: #e17334;
       display: inline-block;

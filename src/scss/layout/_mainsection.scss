@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   background-color: $colorWhite-four;
-  padding-top: 140px;
+  padding-top: 36px;
+  align-items: center;
+  
+  
+ 
 
   &__h1 {
     font-family: $font-Merri;
@@ -10,6 +14,7 @@
     font-weight: 900;
     color: $colorDull-orange;
     margin: 0 auto;
+   
   }
 
   &__p {
@@ -24,10 +29,15 @@
   &__rectangle {
     display: flex;
     justify-content: space-around;
-    margin: 20px 30px;
+    margin: 40px 30px;
     padding: 10px;
      border-radius: 4x;
     border: solid 1.6px $colorDull-orange;
+
+    @media all and (min-width:768px) {
+      max-width: 500px ;
+      margin-bottom: 250px;
+    }
   }
 
   &__btn {
@@ -48,6 +58,7 @@
     justify-content: center;
     width: 60px;
     height: 48.8px;
+    padding: 0 15px;
    
 
     &__img::before {
@@ -61,5 +72,4 @@
     }
   }
 }
-
 

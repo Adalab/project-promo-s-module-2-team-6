@@ -193,7 +193,8 @@ table {
 
 .card {
   background-color: #fff;
-  height: 32rem; }
+  height: 32rem;
+  width: 24rem; }
   .card__cont1 {
     padding: 1.5rem 0 1rem 2rem; }
     .card__cont1-name {
@@ -208,10 +209,12 @@ table {
       font-weight: bold;
       color: #54585a; }
   .card__cont2-img {
-    width: 100%;
-    height: 62%;
+    width: 24rem;
+    height: 20rem;
     background-image: url(https://previews.123rf.com/images/pandavector/pandavector1610/pandavector161000417/63719642-mu%C3%B1eca-icono-negro-ilustraci%C3%B3n-para-la-web-y-m%C3%B3vil-.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden; }
   .card__cont3 {
     padding: 1rem;
     display: flex;
@@ -488,10 +491,11 @@ table {
   display: flex;
   flex-direction: column;
   background-color: #f5f5f5;
-  padding-top: 50px; }
+  padding-top: 140px; }
   .main__h1 {
     font-family: "Merriweather", serif;
     font-size: 19.2px;
+    font-weight: 900;
     color: #e17334;
     margin: 0 auto; }
   .main__p {
@@ -500,10 +504,11 @@ table {
     color: #114e4e;
     margin: 0 20px;
     text-align: center;
-    padding-top: 10px; }
+    padding-top: 5px; }
   .main__rectangle {
     display: flex;
     justify-content: space-around;
+<<<<<<< HEAD
     border: 1px solid #e17334;
     border-radius: 4px;
     margin: 40px 30px;
@@ -514,6 +519,12 @@ table {
       align-items: center; }
       .main__rectangle__element__icon {
         color: orange; }
+=======
+    margin: 20px 30px;
+    padding: 10px;
+    border-radius: 4x;
+    border: solid 1.6px #e17334; }
+>>>>>>> 2f6775e798444d8f5ecdf9da28b93f26f10c6169
   .main__btn {
     margin: 0 auto;
     background-color: #438792;
@@ -523,6 +534,21 @@ table {
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     color: #fff; }
+<<<<<<< HEAD
+=======
+  .main__rectangle__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 48.8px; }
+    .main__rectangle__element__img::before {
+      color: #e17334;
+      display: inline-block;
+      width: 36px;
+      height: 26px; }
+>>>>>>> 2f6775e798444d8f5ecdf9da28b93f26f10c6169
 
 .footer {
   height: 110px;
@@ -597,11 +623,16 @@ table {
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  padding-left: 40px; }
+  justify-content: space-around; }
 
 .image-aweprocar {
   height: 50px;
   width: 201px; }
+
+/* TABLET VERSION and DESKTOP*/
+@media all and (min-width: 768px) {
+  .header {
+    justify-content: left;
+    padding-left: 40px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   background-color: $colorWhite-four;
-  padding-top: 36px;
+  padding-top: 40px;
   align-items: center;
-  
-  
- 
+
 
   &__h1 {
     font-family: $font-Merri;
@@ -14,29 +12,34 @@
     font-weight: 900;
     color: $colorDull-orange;
     margin: 0 auto;
-   
+    text-align: center;
   }
 
   &__p {
     font-family: $font-Open;
     font-size: 12.8px;
+    font-weight: 600;
     color: $colorDark-green-blue;
     margin: 0 20px;
     text-align: center;
     padding-top: 5px;
+     @media all and (min-width:768px) {
+      max-width: 270px;
+    }
   }
 
   &__rectangle {
     display: flex;
     justify-content: space-around;
-    margin: 40px 30px;
-    padding: 10px;
+    margin: 20px auto;
+    padding: 10px 20px 12px 20px;
+    gap:25px;
      border-radius: 4x;
     border: solid 1.6px $colorDull-orange;
+    width: 270px;
 
     @media all and (min-width:768px) {
-      max-width: 500px ;
-      margin-bottom: 250px;
+      margin-bottom: 150px;
     }
   }
 
@@ -45,10 +48,13 @@
     background-color: $colorDirty-blue;
     border-radius: 21px;
     padding: 10px 20px;
-    margin-bottom: 30px;
+    margin: 25px auto;
     text-transform: uppercase;
     font-family: $font-Open;
     color: $colorWhite-two;
+    width: 130px;
+    font-family: $font-Open;
+    font-size: 16px;
   }
 
   &__rectangle__element {
@@ -59,7 +65,7 @@
     width: 60px;
     height: 48.8px;
     padding: 0 15px;
-   
+
 
     &__img::before {
      color: $colorDull-orange;
@@ -67,9 +73,15 @@
      width: 36px ;
      height: 26px;
      font-size: 22.4px;
-     
+     text-align: center;
+    }
+    &__p{
+      font-size: 12.8px;
+      font-family:$font-Open;
+      text-align: center;
     
     }
+
   }
 }
 

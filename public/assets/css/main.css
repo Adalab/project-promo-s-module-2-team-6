@@ -566,7 +566,8 @@ table {
       color: #e17334;
       display: inline-block;
       width: 36px;
-      height: 26px; }
+      height: 26px;
+      font-size: 22.4px; }
 
 .footer {
   height: 110px;

@@ -598,11 +598,16 @@ table {
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  padding-left: 40px; }
+  justify-content: space-around; }
 
 .image-aweprocar {
   height: 50px;
   width: 201px; }
+
+/* TABLET VERSION and DESKTOP*/
+@media all and (min-width: 768px) {
+  .header {
+    justify-content: left;
+    padding-left: 40px; } }
 
 /*# sourceMappingURL=main.css.map */

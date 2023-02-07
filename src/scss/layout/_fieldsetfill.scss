@@ -3,7 +3,7 @@
                 &__legend {
                 display: flex;
                 border-top: 0.1rem $colorWhite-three solid;
-                margin: 0 2rem 2.5rem 2rem;
+                margin: 0 0 2.5rem 0;
                 justify-content: space-between;
 
                     &__div {
@@ -38,14 +38,18 @@
 .fill__div {
     display: flex;
     flex-direction: column;
-    margin: 0 2rem 0 2rem;
+    margin: 0 0 0 0;
 
     &__title {
         color:#114e4e;
         font-size: 1.4rem;
         margin: 2rem 0 0.7rem 0;
         font-family: $font-Open;
-      
+
+
+            @media all and (min-width: 768px) {
+                    font-size: 1.8rem;
+                }
     }
 
     &__input {

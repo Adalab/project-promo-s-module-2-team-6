@@ -41,79 +41,155 @@
     </header>
   <main>
 
-      <section>
-          <div>
-              <i class="fa-regular fa-trash-can"></i>
-              <input type="text" value="reset">
+      <section class="preview">
+          <div class="preview__btn">
+              <i class="fa-regular fa-trash-can preview__btn-icon"></i>
+              <a class="preview__btn-reset" href="">RESET</a>  
           </div>
-          <section>
-              <div>
-                  <h2>Nombre Apellido</h2>
-                  <p>Front-end developer</p>
-                  <img src="#" alt="foto">
-                  <ul>
-                      <li><a href="#"></a><i class="fa-solid fa-mobile-screen-button"></i></a></li>
-                      <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-                      <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                      <li><a href="#"><i class="fa-brands fa-github-alt"></i></a></li>
-                  </ul>
+          <section class="card">
+
+              <div class="card__cont1">
+                  <h2 class="card__cont1-name">Nombre Apellido</h2>
+                  <p class="card__cont1-employ">Front-end developer</p>
               </div>
+
+              <div class="card__cont2-img"></div>
+
+              <ul class="card__cont3">
+                  <li class="card__cont3-list" >
+                      <a class="card__icon" href="#">
+                          <i class="card__icon-phone fa-solid fa-mobile-screen-button"></i>
+                      </a>
+                  </li>
+                  <li class="card__cont3-list">
+                      <a class="card__icon" href="#">
+                          <i class="card__icon-envelope fa-regular fa-envelope"></i>
+                      </a>
+                  </li>
+                  <li class="card__cont3-list">
+                      <a class="card__icon" href="#">
+                          <i class="card__icon-linkedin fa-brands fa-linkedin-in"></i>
+                      </a>
+                  </li>
+                  <li class="card__cont3-list">
+                      <a class="card__icon" href="#">
+                          <i class="card__icon-github fa-brands fa-github-alt"></i>
+                      </a>
+                  </li>
+              </ul>
           </section>
       </section>
       
       <form>
-          <fieldset>
-              <i class="fas fa-chevron-down"></i>
+          <fieldset class="desing">
+              <section class="desing__head">
+                  <div class="desing__head-div">
+                      <i class="desing__head-icon fa-regular fa-object-ungroup"></i>
+                      <h2 class="desing__head-title">DISEÑA</h2>
+                  </div>
+                  <i class="desing__head-arrow fas fa-chevron-down"></i>
+              </section>
+
+              <section class="desing__contCol">
+                  <h3 class="desing__color">COLORES</h3>
+                  <section>
+                      <article class="palet__color">
+                          <input type="radio">
+                          <div class="contain__col col1"></div>
+                          <div class="contain__col col2"></div>
+                          <div class="contain__col col3"></div>
+                      </article>
+                      <article class="palet__color">
+                          <input type="radio">
+                          <div class="contain__col col4"></div>
+                          <div class="contain__col col5"></div>
+                          <div class="contain__col col6"></div>
+                      </article>
+                      <article class="palet__color">
+                          <input type="radio">
+                          <div class="contain__col col7"></div>
+                          <div class="contain__col col8"></div>
+                          <div class="contain__col col9"></div>
+                      </article>
+                  </section>
+              </section>
               
           </fieldset>
-          
-          <section class="sectionfill">
-                  <div class="sectionfill__div">
-                          <i class="far fa-keyboard sectionfill__div__icon"></i>
-                          <h2 class="sectionfill__div__title">Rellena</h2>
-                  </div>
-                  <i class="fas fa-chevron-down sectionfill__arrow"></i>
-          </section>
-
           <fieldset class="fill">  
 
-          <label for="firstname" class="fill__title">Nombre completo</label>
-          <input class="fill__input" type=text placeholder="Ej:Sally Jill" id="firstname" name="firstname"> 
-
-          <label for="jobposition" class="fill__title"> Puesto</label>
-          <input class="fill__input" type=text placeholder="Ej:Front-end unicorn" id="jobposition" name="jobposition"> 
-
-          <label for="" class="fill__title" >Imagen de perfil</label>
-          <section class="fill__section">
-                  <label for="" class="fill__section__button" >Añadir Imagen</label>
-                  <div class="fill__section__rectangle"></div>
-          </section>
+          <div class="fill__legend">
+                  <div class="fill__legend__div">
+                          <i class="far fa-keyboard fill__legend__div__icon"></i>
+                          <h2 class="fill__legend__div__title">Rellena</h2>
+                  </div>
+                  <i class="fas fa-chevron-down fill__legend__arrow"></i>
+          </div>
 
 
-          <label for="email" class="fill__title" >Email</label>
-          <input class="fill__input" type=email placeholder="Ej:sally-hill@gmail.com" id="email" name="email"> 
-
-          <label for="phone" class="fill__title">Teléfono</label>
-          <input class="fill__input" type=number placeholder="Ej: 555-55-55-55" id="phone" name="phone"> 
-
-          <label for="linkedig" class="fill__title" >Linkedin</label>
-          <input class="fill__input" type=number placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" name="linkedin"> 
-
-          <label for="linkedig" class="fill__title" >Github</label>
-          <input class="fill__input" type=number placeholder="Ej: @sally-hill" id="linkedin" name="linkedin"> 
+          <div class="fill__div">
+                  
+                  <label for="firstname" class="fill__div__title">Nombre completo</label>
+                  <input class="fill__div__input" type=text placeholder="Ej:Sally Jill" id="firstname" name="firstname">
+                  
+                  <label for="jobposition" class="fill__div__title"> Puesto</label>
+                  <input class="fill__div__input" type=text placeholder="Ej:Front-end unicorn" id="jobposition" name="jobposition">
+                  
+                  <label for="" class="fill__div__title" >Imagen de perfil</label>
+                  <section class="fill__div__section">
+                          <label for="" class="fill__div__section__button" >Añadir Imagen</label>
+                          <div class="fill__div__section__rectangle"></div>
+                  </section>
+                  
+                  
+                  <label for="email" class="fill__div__title" >Email</label>
+                  <input class="fill__div__input" type=email placeholder="Ej:sally-hill@gmail.com" id="email" name="email">
+                  
+                  <label for="phone" class="fill__div__title">Teléfono</label>
+                  <input class="fill__div__input" type=number placeholder="Ej: 555-55-55-55" id="phone" name="phone">
+                  
+                  <label for="linkedig" class="fill__div__title" >Linkedin</label>
+                  <input class="fill__div__input" type=number placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" name="linkedin">
+                  
+                  <label for="linkedig" class="fill__div__title" >Github</label>
+                  <input class="fill__div__input" type=number placeholder="Ej: @sally-hill" id="linkedin" name="linkedin">
+          </div>
 
           </fieldset>
-          <section class="sectionshare">
-                  <div class="sectionshare__div">
-                      <i class="fas fa-share-alt sectionshare__div__icon"></i>
-                      <h2 class="sectionshare__div__title">Comparte</h2>
-                  </div>
-                  <i class="fas fa-chevron-down sectionshare__arrow"></i>
-          </section>
-
           <fieldset class="share">
 
-           <label for="" class="share__button" ><i class="fa-regular fa-address-card share__icon"></i> Crear tarjeta</label>
+              <div class="share__legend">
+                      <div class="share__legend__div">
+                          <i class="fas fa-share-alt share__legend__div__icon"></i>
+                          <h2 class="share__legend__div__title">Comparte</h2>
+                      </div>
+                      <i class="fas fa-chevron-down share__legend__arrow"></i>
+                  </div>
+
+
+              <div class="share__div">
+                  
+                          <label for="" class="share__div__button" ><i class="fa-regular fa-address-card share__div__icon"></i> Crear tarjeta</label>
+              </div>
+
+
+
+              <div class="sharenone">
+
+                          <label for="" class="sharenone__button" ><i class="fa-regular fa-address-card sharenone__icon"></i> Crear tarjeta</label>
+
+                          <div class="sharenone__section">
+                              <h2 class="sharenone__section__title">La tarjeta ha sido creada:</h2>
+                              <a class="sharenone__section__a" href="">https://awesome-profile-card.com?id=A456DF0001</a>
+                              <a class="sharenone__section__button"href=""><i class="fa-brands fa-twitter sharenone__section__icon"></i>Compartir en twitter</a>
+
+                              
+                          </div>
+
+              </div>
+
+
+
+
           </fieldset>
       </form>
   </main>

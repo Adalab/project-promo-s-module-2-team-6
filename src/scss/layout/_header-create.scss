@@ -1,22 +1,27 @@
-.header {
+.header-create {
 
     height: 111px;
     background-color: $colorWhite-two;
+    padding-top: 31px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.image-aweprocar {
+.header-create__image-aweprocar {
     height: 50px;
     width: 201px;
-}
+    }
 
-/* TABLET VERSION and DESKTOP*/
+    /* TABLET VERSION and DESKTOP*/
 @media all and (min-width: 768px) {
 
-    .header{
-        justify-content:left;
+    .header-create {
         padding-left: 40px;
+        justify-content:flex-start;
     }
 }
+
+
+
+

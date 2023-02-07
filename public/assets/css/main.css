@@ -173,44 +173,188 @@ table {
     margin-bottom: 30px;
     margin-left: 40px; } }
 
-.sectionfill {
+.preview {
+  background-color: #bfcdd0;
+  padding: 4rem; }
+  .preview__btn {
+    width: 6.5rem;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    border: 0.1rem solid #f9f4dc;
+    margin-bottom: 2rem; }
+  .preview__btn-icon {
+    color: #54585a;
+    font-size: 1.2 rem; }
+  .preview__btn-reset {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    color: #54585a; }
+
+.card {
+  background-color: #fff;
+  height: 32rem;
+  width: 24rem; }
+  .card__cont1 {
+    padding: 1.5rem 0 1rem 2rem; }
+    .card__cont1-name {
+      font-size: 1.8rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #114e4e;
+      line-height: 1.5; }
+    .card__cont1-employ {
+      font-size: 1.6rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #54585a; }
+  .card__cont2-img {
+    width: 24rem;
+    height: 20rem;
+    background-image: url(https://previews.123rf.com/images/pandavector/pandavector1610/pandavector161000417/63719642-mu%C3%B1eca-icono-negro-ilustraci%C3%B3n-para-la-web-y-m%C3%B3vil-.jpg);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden; }
+  .card__cont3 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-evenly; }
+
+.card__icon {
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 0.1rem solid #a2deaf;
+  margin-left: 1rem;
+  border-radius: 50%;
+  text-align: center; }
+  .card__icon-phone {
+    color: #114e4e;
+    font-size: 1.8rem;
+    padding: 0.5rem; }
+  .card__icon-envelope {
+    color: #114e4e;
+    font-size: 1.8rem;
+    padding: 0.5rem; }
+  .card__icon-linkedin {
+    color: #114e4e;
+    font-size: 1.8rem;
+    padding: 0.5rem; }
+  .card__icon-github {
+    color: #114e4e;
+    font-size: 1.8rem;
+    padding: 0.5rem; }
+
+.desing__head {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .desing__head-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem; }
+  .desing__head-icon {
+    color: #e17334;
+    font-size: 1.8rem; }
+  .desing__head-title {
+    color: #54585a;
+    font-size: 1.8rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold; }
+  .desing__head-arrow {
+    color: #54585a;
+    font-size: 1.8rem; }
+
+.desing__contCol {
+  padding: 0 2rem 1rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.palet__color {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem; }
+
+.desing__color {
+  font-size: 1.4 rem;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a; }
+
+.contain__col {
+  width: 3rem;
+  height: 2.5rem; }
+
+.col1 {
+  background-color: #114e4e; }
+
+.col2 {
+  background-color: #438792; }
+
+.col3 {
+  background-color: #a2deaf; }
+
+.col4 {
+  background-color: #420101; }
+
+.col5 {
+  background-color: #bd1010; }
+
+.col6 {
+  background-color: #e95626; }
+
+.col7 {
+  background-color: #3e5b65; }
+
+.col8 {
+  background-color: #eab052; }
+
+.col9 {
+  background-color: #a0c0cf; }
+
+.fill__legend {
   display: flex;
   border-top: 0.1rem #d8d8d8 solid;
   margin: 0 2rem 2.5rem 2rem;
   justify-content: space-between; }
-  .sectionfill__div {
+  .fill__legend__div {
     display: flex; }
-    .sectionfill__div__icon {
+    .fill__legend__div__icon {
       color: #e17334;
       font-size: 1.8rem;
       margin: 1rem 1rem 0 0; }
-    .sectionfill__div__title {
+    .fill__legend__div__title {
       font-size: 1.8rem;
       text-transform: uppercase;
       color: #54585a;
       font-family: "Open Sans", sans-serif;
       margin-top: 1rem;
       font-weight: 600; }
-  .sectionfill__arrow {
+  .fill__legend__arrow {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: #54585a; }
 
-.fill {
+.fill__div {
   display: flex;
   flex-direction: column;
   margin: 0 2rem 0 2rem; }
-  .fill__title {
+  .fill__div__title {
     color: #114e4e;
     font-size: 1.4rem;
     margin: 2rem 0 0.7rem 0;
     font-family: "Open Sans", sans-serif; }
-  .fill__input {
+  .fill__div__input {
     border: 1px solid #a2deaf;
     height: 3rem; }
-  .fill__section {
+  .fill__div__section {
     display: flex; }
-    .fill__section__button {
+    .fill__div__section__button {
       color: white;
       background-color: #e17334;
       height: 3rem;
@@ -221,8 +365,9 @@ table {
       font-size: 14px;
       font-family: "Open Sans", sans-serif;
       border-radius: 3px;
-      margin-right: 2rem; }
-    .fill__section__rectangle {
+      margin-right: 2rem;
+      box-shadow: 0 0 4px 0 black; }
+    .fill__div__section__rectangle {
       border: 1px solid #a2deaf;
       height: 3rem;
       width: 3rem; }
@@ -235,34 +380,34 @@ table {
   color: #c5c5c5;
   font-size: 1.2em; }
 
-.sectionshare {
+.share__legend {
   display: flex;
   border-top: 0.1rem #d8d8d8 solid;
   margin: 2rem 2rem 2.5rem 2rem;
   justify-content: space-between; }
-  .sectionshare__div {
+  .share__legend__div {
     display: flex; }
-    .sectionshare__div__icon {
+    .share__legend__div__icon {
       color: #e17334;
       font-size: 1.8rem;
       margin: 1rem 1rem 0 0; }
-    .sectionshare__div__title {
+    .share__legend__div__title {
       font-size: 1.8rem;
       text-transform: uppercase;
       color: #54585a;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
       margin-top: 1rem; }
-  .sectionshare__arrow {
+  .share__legend__arrow {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: #54585a; }
 
-.share {
+.share__div {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .share__button {
+  .share__div__button {
     color: white;
     background-color: #e17334;
     height: 5rem;
@@ -275,9 +420,72 @@ table {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     border-radius: 12px;
-    margin-bottom: 3rem; }
-  .share__icon {
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 6px 0 #000; }
+  .share__div__icon {
     margin-right: 1rem; }
+
+.sharenone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem 2.5rem 2rem; }
+  .sharenone__button {
+    color: white;
+    background-color: #d5d5d5;
+    height: 5rem;
+    width: 19.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    border-radius: 12px;
+    margin-bottom: 3rem; }
+  .sharenone__icon {
+    margin-right: 1rem; }
+  .sharenone__section {
+    border-top: 0.1rem #d8d8d8 solid;
+    border-bottom: 0.1rem #d8d8d8 solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .sharenone__section__title {
+      color: #54585a;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      margin-top: 2rem;
+      font-size: 1.8rem; }
+    .sharenone__section__a {
+      color: #e17334;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      font-family: OpenSans;
+      font-size: 1.2rem;
+      font-weight: 600; }
+    .sharenone__section__button {
+      color: white;
+      width: 18.1rem;
+      height: 3rem;
+      background-color: #00a0f5;
+      margin: 1.3rem 0 3rem 0;
+      padding: 0.3rem 0.9rem 0.6rem 1.05rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 4px 0 black;
+      font-size: 1.4rem;
+      font-family: OpenSans;
+      font-weight: 200; }
+    .sharenone__section__icon {
+      margin-right: 1rem; }
 
 .main {
   display: flex;
@@ -399,11 +607,16 @@ table {
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  padding-left: 40px; }
+  justify-content: space-around; }
 
 .image-aweprocar {
   height: 50px;
   width: 201px; }
+
+/* TABLET VERSION and DESKTOP*/
+@media all and (min-width: 768px) {
+  .header {
+    justify-content: left;
+    padding-left: 40px; } }
 
 /*# sourceMappingURL=main.css.map */

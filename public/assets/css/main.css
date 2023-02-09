@@ -174,7 +174,7 @@ table {
     margin-left: 40px; } }
 
 .collapsed {
-  display: none; }
+  visibility: hidden; }
 
 .main-create {
   background-image: linear-gradient(to bottom, #f5f5f5, #fff 9%); }

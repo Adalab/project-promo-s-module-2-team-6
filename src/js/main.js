@@ -18,9 +18,9 @@ const divShare = document.querySelector('.js-divShare');
 // crear clase collapsed
 
 function closeAlldiv () {
-divDesign.classList.add ('collapsed');
-divFill.classList.add ('collapsed');
-divShare.classList.add ('collapsed');
+divDesign.classList.add('collapsed');
+divFill.classList.add('collapsed');
+divShare.classList.add('collapsed');
 }
 
 function openDesign () {
@@ -35,15 +35,18 @@ function openShare () {
     divShare.classList.remove('collapsed');
 }
 
-// Evento Design
+// Evento Design 
 
 function handleClikDesign (event) {
-    console.log('click');
+    console.log(event.currentTarget);
     closeAlldiv ();
-    openDesign () ;
+    openDesign ();
+
 }
 
 designLegend.addEventListener ('click', handleClikDesign);
+
+
 
 // Evento Fill
 
@@ -58,9 +61,11 @@ fillLegend.addEventListener ('click', handleClikFill);
 // Evento Fill
 
 function handleClikShare (event) {
-    console.log('click');
+    console.log("click");
     closeAlldiv ();
     openShare () ;
 }
 
 shareLegend.addEventListener ('click', handleClikShare);
+
+

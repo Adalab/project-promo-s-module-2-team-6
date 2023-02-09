@@ -17,34 +17,34 @@ const divShare = document.querySelector('.js-divShare');
 
 // crear clase collapsed
 
-function closeAlldiv () {
-divDesign.classList.add('collapsed');
-divFill.classList.add('collapsed');
-divShare.classList.add('collapsed');
+function closeAlldiv() {
+    divDesign.classList.add('collapsed');
+    divFill.classList.add('collapsed');
+    divShare.classList.add('collapsed');
 }
 
-function openDesign () {
+function openDesign() {
     divDesign.classList.remove('collapsed');
 }
 
-function openFill () {
+function openFill() {
     divFill.classList.remove('collapsed');
 }
 
-function openShare () {
+function openShare() {
     divShare.classList.remove('collapsed');
 }
 
 // Evento Design 
 
-function handleClikDesign (event) {
+function handleClikDesign(event) {
     console.log(event.currentTarget);
-    closeAlldiv ();
-    openDesign ();
+    closeAlldiv();
+    openDesign();
 
 }
 
-designLegend.addEventListener ('click', handleClikDesign);
+designLegend.addEventListener('click', handleClikDesign);
 
 
 
@@ -52,20 +52,20 @@ designLegend.addEventListener ('click', handleClikDesign);
 
 const handleClikFill = (event) => {
     console.log('click');
-    closeAlldiv ();
-    openFill () ;
+    closeAlldiv();
+    openFill();
 }
 
-fillLegend.addEventListener ('click', handleClikFill);
+fillLegend.addEventListener('click', handleClikFill);
 
 // Evento Fill
 
-function handleClikShare (event) {
+function handleClikShare(event) {
     console.log("click");
-    closeAlldiv ();
-    openShare () ;
+    closeAlldiv();
+    openShare();
 }
 
-shareLegend.addEventListener ('click', handleClikShare);
+shareLegend.addEventListener('click', handleClikShare);
 
 

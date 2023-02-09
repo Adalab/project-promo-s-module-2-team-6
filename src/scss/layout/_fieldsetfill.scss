@@ -47,10 +47,6 @@
         font-family: $font-Open;
 
 
-            @media all and (min-width: 768px) {
-                    font-size: 1.8rem;
-                }
-    }
 
     &__input {
         border: 1px solid $colorHospital-green;

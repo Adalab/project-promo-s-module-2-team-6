@@ -50,7 +50,7 @@ designLegend.addEventListener ('click', handleClikDesign);
 
 // Evento Fill
 
-function handleClikFill (event) {
+const handleClikFill = (event) => {
     console.log('click');
     closeAlldiv ();
     openFill () ;

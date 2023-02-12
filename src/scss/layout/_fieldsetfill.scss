@@ -30,8 +30,13 @@
                 margin-top: 1rem;
                 font-size: 1.8rem;
                 color:$colorGunmetal;
+                transition: all .3s linear;
                 
-            } }
+            } 
+            &__arrow:hover {
+                transform: rotate(180deg);
+            }
+        }
  
 }
 

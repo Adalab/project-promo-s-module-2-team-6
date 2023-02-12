@@ -1,13 +1,8 @@
-
-
-
-
 .main-create {
     background-image: linear-gradient(to bottom, $colorWhite-four, $colorWhite-two 9%);
 
     @media all and (min-width: 768px) {
         background-image: linear-gradient(to bottom, $colorWhite-four, $colorWhite-two 9%);
-          border: blueviolet solid 2px;
             display: flex;
             flex-direction: row-reverse;
             justify-content: center;
@@ -29,8 +24,8 @@ padding: 2rem 2rem 0 2rem;
 
 .preview {
     background-color: $colorSilver;
-    padding: 4rem;
-    
+    padding: 4rem;    
+ 
 
     @media all and (min-width: 768px) {
             width: 40vw;
@@ -74,6 +69,7 @@ padding: 2rem 2rem 0 2rem;
 
     &__cont1 {
         padding: 1.5rem 0 1rem 2rem;
+        border-left: 5px solid $colorDirty-blue;
         
         &-name{
             font-size: 1.8rem;

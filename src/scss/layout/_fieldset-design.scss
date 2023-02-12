@@ -1,9 +1,9 @@
 .desing__head {
     padding: 1.5rem 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-   
 
     &-div {
         display: flex;
@@ -24,6 +24,10 @@
     &-arrow {
         color: $colorGunmetal;
         font-size: 1.8rem;
+        transition: all .3s linear;
+    }
+    &-arrow:hover {
+        transform: rotate(180deg);
     }
 
 }
@@ -34,7 +38,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.palet__color {
+.palette {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -47,7 +51,7 @@
     font-family: $font-Open;
     color: $colorGunmetal;
 }
-.contain__col {
+.palette__cont {
     width: 3rem;
     height: 2.5rem;
 }
@@ -78,4 +82,13 @@
 }
 .col9 {
     background-color: $colorLight-grey-blue;
+}
+.col10 {
+    background-color: #845EC2;
+}
+.col11 {
+    background-color: #4b4453;
+}
+.col12 {
+    background-color: #b0a8b9;
 }

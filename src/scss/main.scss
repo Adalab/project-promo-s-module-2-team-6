@@ -16,3 +16,12 @@
 .collapsed {
     display: none;
 }
+
+.arrow-collapsed {
+    transform: rotate(180deg);
+}
+
+body {
+
+    height: 100vh;
+}

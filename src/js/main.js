@@ -15,24 +15,36 @@ const divFill = document.querySelector('.js-divFill');
 const shareLegend = document.querySelector('.js-shareLegend');
 const divShare = document.querySelector('.js-divShare');
 
+const arrowDesign = document.querySelector('.js-arrow-design');
+
+const arrowFill = document.querySelector('.js-arrow-fill');
+
+const arrowShare = document.querySelector('.js-arrow-share');
+
 // crear clase collapsed
 
 function closeAlldiv() {
     divDesign.classList.add('collapsed');
     divFill.classList.add('collapsed');
     divShare.classList.add('collapsed');
+    arrowDesign.classList.remove('arrow-collapsed');
+    arrowFill.classList.remove('arrow-collapsed');
+    arrowShare.classList.remove('arrow-collapsed');
 }
 
 function openDesign() {
     divDesign.classList.remove('collapsed');
+    arrowDesign.classList.add('arrow-collapsed');
 }
 
 function openFill() {
     divFill.classList.remove('collapsed');
+    arrowFill.classList.add('arrow-collapsed');
 }
 
 function openShare() {
     divShare.classList.remove('collapsed');
+    arrowShare.classList.add('arrow-collapsed');
 }
 
 // Evento Design 
@@ -41,7 +53,6 @@ function handleClikDesign(event) {
     console.log(event.currentTarget);
     closeAlldiv();
     openDesign();
-
 }
 
 designLegend.addEventListener('click', handleClikDesign);
@@ -54,16 +65,18 @@ const handleClikFill = (event) => {
     console.log('click');
     closeAlldiv();
     openFill();
+    arrow.classList.toggle("arrow-collapsed");
 }
 
 fillLegend.addEventListener('click', handleClikFill);
 
-// Evento Fill
+// Evento Share
 
 function handleClikShare(event) {
     console.log("click");
     closeAlldiv();
     openShare();
+    arrow.classList.toggle("arrow-collapsed");
 }
 
 shareLegend.addEventListener('click', handleClikShare);
@@ -111,7 +124,7 @@ inputEmail.addEventListener('keyup' , () => {
 //Evento Linkedin
 inputLinkedin.addEventListener('keyup' , () => {
     const linkedinWritten = inputLinkedin.value;
-    cardLinkedin.href = `${linkedinWritten}`;
+    cardLinkedin.href = `https://${linkedinWritten}`;
 });
 
 // Evento github

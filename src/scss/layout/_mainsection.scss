@@ -4,6 +4,12 @@
   background-color: $colorWhite-four;
   padding-top: 40px;
   align-items: center;
+  height: 50vh;
+  
+  @media all and (min-width:768px) {
+    height: 50vh;
+    }
+
 
 
   &__h1 {

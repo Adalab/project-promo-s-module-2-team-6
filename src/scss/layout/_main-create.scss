@@ -37,6 +37,10 @@ padding: 2rem 2rem 0 2rem;
             flex-direction: column;
             justify-content: center;
             border-radius: 0.6rem;
+
+            &__conteiner {
+                margin-top: -20rem;
+            }
         }
 
      @media all and (min-width: 1024px) {

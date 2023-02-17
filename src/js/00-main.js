@@ -65,7 +65,7 @@ const handleClikFill = (event) => {
     console.log('click');
     closeAlldiv();
     openFill();
-    arrow.classList.toggle("arrow-collapsed");
+    arrowShare.classList.toggle("arrow-collapsed");
 }
 
 fillLegend.addEventListener('click', handleClikFill);
@@ -76,7 +76,7 @@ function handleClikShare(event) {
     console.log("click");
     closeAlldiv();
     openShare();
-    arrow.classList.toggle("arrow-collapsed");
+    arrowShare.classList.toggle("arrow-collapsed");
 }
 
 shareLegend.addEventListener('click', handleClikShare);

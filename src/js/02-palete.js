@@ -19,25 +19,26 @@ function removepalette() {
 function handleclik1() {
   removepalette();
   allcard.classList.add('palette1');
-
+  data.palette = '1';
 }
 
 function handleclik2() {
   removepalette();
   allcard.classList.add('palette2');
+  data.palette = '2';
 
 }
 
 function handleclik3() {
   removepalette();
   allcard.classList.add('palette3');
-
+  data.palette = '3';
 }
 
 function handleclik4() {
   removepalette();
   allcard.classList.add('palette4');
-
+  data.palette = '4';
 }
 
 
@@ -45,3 +46,4 @@ option1.addEventListener('click', handleclik1);
 option2.addEventListener('click', handleclik2);
 option3.addEventListener('click', handleclik3);
 option4.addEventListener('click', handleclik4);
+

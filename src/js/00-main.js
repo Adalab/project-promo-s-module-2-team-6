@@ -96,13 +96,27 @@ const cardLinkedin = document.querySelector('.js-cardLinkedin');
 const inputGithub = document.querySelector('.js-inputGithub');
 const cardGithub = document.querySelector('.js-cardGithub');
 
+let data = {
+    palette: "",
+    name: "",
+    job: "",
+    phone: "",
+    email: "",
+    linkedin: "",
+    github: "",
+    photo: "",
+  }
+
+
+
 // Evento Nombre
 inputName.addEventListener('keyup' , () => {
     const nameWritten = inputName.value;
     if (nameWritten === '') {
         cardName.innerHTML = 'Nombre Apellido';
     } else {
-        cardName.innerHTML = inputName.value;
+        cardName.innerHTML = nameWritten;
+        data.name = nameWritten;
     }
 });
 // Evento Empleo
@@ -111,7 +125,9 @@ inputJob.addEventListener('keyup' , () => {
     if (jobWritten === '') {
         cardJob.innerHTML = 'Front-end-developer';
     } else {
-        cardJob.innerHTML = inputJob.value;
+        cardJob.innerHTML = jobWritten;
+        data.job = jobWritten;
+
     }
 });
 
@@ -119,23 +135,30 @@ inputJob.addEventListener('keyup' , () => {
 inputEmail.addEventListener('keyup' , () => {
     const emailWritten = inputEmail.value;
     cardEmail.href = `mailto:${emailWritten}`;
+    data.email = emailWritten;
+
 });
 
 //Evento Linkedin
 inputLinkedin.addEventListener('keyup' , () => {
     const linkedinWritten = inputLinkedin.value;
     cardLinkedin.href = `https://${linkedinWritten}`;
+    data.linkedin = linkedinWritten;
+
 });
 
 // Evento github
 inputGithub.addEventListener('keyup' , () => {
     const githubWritten = inputGithub.value;
     cardGithub.href = `https://github.com/${githubWritten.slice(1 , 50)}`;
-    console.log('hola');
+    data.github = githubWritten;
 });
 
 // Evento telefono
 inputPhone.addEventListener('keyup' , () => {
     const phoneWritten = inputPhone.value;
     cardPhone.href = `tel:${phoneWritten}`;
+    data.phone = phoneWritten;
 });
+
+// Evento palette

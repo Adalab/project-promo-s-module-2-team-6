@@ -2,7 +2,7 @@
 'use strict';
 
 let data = {
-    palette: "",
+    palette: "1",
     name: "",
     job: "",
     phone: "",
@@ -108,6 +108,26 @@ const inputGithub = document.querySelector('.js-inputGithub');
 const cardGithub = document.querySelector('.js-cardGithub');
 
 
+let nameLocal = localStorage.getItem('CardName');
+inputName.value = nameLocal;
+
+let jobLocal = localStorage.getItem('CardJob');
+inputJob.value = jobLocal;
+
+
+let LinkedinLocal = localStorage.getItem('CardLinkedin');
+inputLinkedin.value = LinkedinLocal;
+
+
+let phoneLocal = localStorage.getItem('CardPhone');
+inputPhone.value = phoneLocal;
+
+
+let emailLocal = localStorage.getItem('CardEmail');
+inputEmail.value = emailLocal;
+
+let githubLocal = localStorage.getItem('CardGithub');
+inputGithub.value = githubLocal;
 
 
 // Evento Nombre
@@ -118,6 +138,7 @@ inputName.addEventListener('keyup', () => {
     } else {
         cardName.innerHTML = nameWritten;
         data.name = nameWritten;
+        localStorage.setItem('CardName', nameWritten);
     }
 });
 // Evento Empleo
@@ -128,7 +149,7 @@ inputJob.addEventListener('keyup', () => {
     } else {
         cardJob.innerHTML = jobWritten;
         data.job = jobWritten;
-
+        localStorage.setItem('CardJob', jobWritten);
     }
 });
 
@@ -137,6 +158,7 @@ inputEmail.addEventListener('keyup', () => {
     const emailWritten = inputEmail.value;
     cardEmail.href = `mailto:${emailWritten}`;
     data.email = emailWritten;
+    localStorage.setItem('CardEmail', emailWritten);
 
 });
 
@@ -145,6 +167,8 @@ inputLinkedin.addEventListener('keyup', () => {
     const linkedinWritten = inputLinkedin.value;
     cardLinkedin.href = `https://${linkedinWritten}`;
     data.linkedin = linkedinWritten;
+    localStorage.setItem('CardLinkedin', linkedinWritten);
+
 
 });
 
@@ -153,6 +177,7 @@ inputGithub.addEventListener('keyup', () => {
     const githubWritten = inputGithub.value;
     cardGithub.href = `https://github.com/${githubWritten.slice(1, 50)}`;
     data.github = githubWritten;
+    localStorage.setItem('CardGithub', githubWritten);
 });
 
 // Evento telefono
@@ -160,6 +185,6 @@ inputPhone.addEventListener('keyup', () => {
     const phoneWritten = inputPhone.value;
     cardPhone.href = `tel:${phoneWritten}`;
     data.phone = phoneWritten;
+    localStorage.setItem('CardPhone', phoneWritten);
 });
 
-// Evento palette

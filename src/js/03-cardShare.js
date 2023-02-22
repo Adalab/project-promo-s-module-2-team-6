@@ -2,18 +2,21 @@
 
 const buttonCard = document.querySelector('.js__buttonCard');
 const createLink = document.querySelector('.js__createLink');
-const urlCard = document.querySelector('js__url');
+const urlCard = document.querySelector('.js__url');
 
-function handleClickCard (event) {
-    event.preventDefault();
-    //buttonCard.classList.add('collapsed');
-    //createLink.classList.remove('collapsed');
-    dataFetch();
+function handleClickCard(event) {
+  event.preventDefault();
+  //buttonCard.classList.add('collapsed');
+  //createLink.classList.remove('collapsed');
+  dataFetch();
 }
 
 
 
-buttonCard.addEventListener('click' , handleClickCard);
+buttonCard.addEventListener('click', handleClickCard);
+
+const msjError = document.querySelector('.js-msjError');
+const btnTwitter = document.querySelector('.js-btnTwitter');
 
 
 function dataFetch() {
@@ -29,15 +32,15 @@ function dataFetch() {
     .then((data) => {
       console.log(data);
 
-    if (data.success === false) {
-         // if ( ! data.success ) {
-         // Mostrar un mensajito a la usuaria
-        } else {
-            buttonCard.classList.add('collapsed');
-            createLink.classList.remove('collapsed');
-            urlCard.innerHTML = '';
-            // Muestro la dirección y el btn de Tw.
-       }
+      if (data.success === false) {
+        msjError.innerHTML = '*  Te faltan datos por rellenar '
+      } else {
+        msjError.innerHTML = '';
+        buttonCard.classList.add('collapsed');
+        createLink.classList.remove('collapsed');
+        urlCard.innerHTML = data.cardURL;
+        btnTwitter.href = `https://twitter.com/intent/tweet?text=This%20is%20my%20bussiness%20card:&url=${data.cardURL}`;
+      }
     });
 }
 

@@ -1,38 +1,51 @@
 <main class="main-create">
-
-    <section class="preview">
-        <div class="preview__conteiner">
-            <div class="preview__btn">
-                <i class="fa-regular fa-trash-can preview__btn-icon"></i>
-                <a class="preview__btn-reset" href="">RESET</a>
-            </div>
-            <section class="card js-allcard">
-                <div class="card__cont1">
-                    <h2 class="card__cont1-name js-cardName">Nombre Apellido</h2>
-                    <h3 class="card__cont1-employ js-cardJob">Front-end developer</h3>
-                </div>
-                <div class="card__cont2-img js__profile-image"></div>
-                <nav class="card__cont3">
-                    <a class="card__icon js-cardPhone" title="Enlace al teléfono" href="#">
-                        <i class="card__icon--all  fa-solid fa-mobile-screen-button"></i>
-                    </a>
-                    <a class="card__icon js-cardEmail" title="Enlace al email" href="#">
-                        <i class="card__icon--all  fa-regular fa-envelope"></i>
-                    </a>
-                    <a class="card__icon js-cardLinkedin" title="Enlace al Linkedin" href="#" target="_blank">
-                        <i class="card__icon--all  fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a class="card__icon js-cardGithub" title="Enlace al Github" href="#" target="_blank">
-                        <i class="card__icon--all fa-brands fa-github-alt"></i>
-                    </a>
-                </nav>
-            </section>
+  <section class="preview">
+    <div class="preview__conteiner">
+      <div class="preview__btn">
+        <i class="fa-regular fa-trash-can preview__btn-icon"></i>
+        <a class="preview__btn-reset js-reset" href="">RESET</a>
+      </div>
+      <section class="card js-allcard">
+        <div class="card__cont1">
+          <h2 class="card__cont1-name js-cardName">Nombre Apellido</h2>
+          <h3 class="card__cont1-employ js-cardJob">Front-end developer</h3>
         </div>
-    </section>
-    
-    <form class="form">
-        <include src="../partials-create/fieldset-design.html"></include>
-        <include src="../partials-create/fieldset-fill.html"></include>
-        <include src="../partials-create/fieldset-share.html"></include>
-    </form>
+        <div class="card__cont2-img js__profile-image"></div>
+        <nav class="card__cont3">
+          <a
+            class="card__icon js-cardPhone"
+            title="Enlace al teléfono"
+            href="#"
+          >
+            <i class="card__icon--all fa-solid fa-mobile-screen-button"></i>
+          </a>
+          <a class="card__icon js-cardEmail" title="Enlace al email" href="#">
+            <i class="card__icon--all fa-regular fa-envelope"></i>
+          </a>
+          <a
+            class="card__icon js-cardLinkedin"
+            title="Enlace al Linkedin"
+            href="#"
+            target="_blank"
+          >
+            <i class="card__icon--all fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            class="card__icon js-cardGithub"
+            title="Enlace al Github"
+            href="#"
+            target="_blank"
+          >
+            <i class="card__icon--all fa-brands fa-github-alt"></i>
+          </a>
+        </nav>
+      </section>
+    </div>
+  </section>
+
+  <form class="form">
+    <include src="../partials-create/fieldset-design.html"></include>
+    <include src="../partials-create/fieldset-fill.html"></include>
+    <include src="../partials-create/fieldset-share.html"></include>
+  </form>
 </main>

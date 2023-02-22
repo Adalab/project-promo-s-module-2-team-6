@@ -1,36 +1,40 @@
 <fieldset class="share">
+  <div class="share__legend js-shareLegend" title="Despliega la sección">
+    <div class="share__legend__div">
+      <i class="fas fa-share-alt share__legend__div__icon"></i>
+      <h2 class="share__legend__div__title">Comparte</h2>
+    </div>
+    <i class="fas fa-chevron-down share__legend__arrow js-arrow-share"></i>
+  </div>
 
-    <div class="share__legend js-shareLegend" title="Despliega la sección">
-            <div class="share__legend__div">
-                <i class="fas fa-share-alt share__legend__div__icon"></i>
-                <h2 class="share__legend__div__title">Comparte</h2>
-            </div>
-            <i class="fas fa-chevron-down share__legend__arrow js-arrow-share"></i>
-        </div>
-
-
-    <div class="share__div js-divShare collapsed">
-        
-                <label for="" class="share__div__button js__buttonCard" ><i class="fa-regular fa-address-card share__div__icon"></i> Crear tarjeta</label>
-    
-
-
-
-            <div class="sharenone collapsed js__createLink">
-
-                        <label for="" class="sharenone__button " ><i class="fa-regular fa-address-card sharenone__icon"></i> Crear tarjeta</label>
-
-                        <div class="sharenone__section">
-                            <h2 class="sharenone__section__title">La tarjeta ha sido creada:</h2>
-                            <a class="sharenone__section__a js__url" href="">https://awesome-profile-card.com?id=A456DF0001</a>
-                            <a class="sharenone__section__button" href=""><i class="fa-brands fa-twitter sharenone__section__icon"></i>Compartir en twitter</a>
-
-                            
-                        </div>
-
-            </div> 
-
+  <div class="share__div js-divShare collapsed">
+    <div>
+      <label for="" class="share__div__button js__buttonCard">
+        <i class="fa-regular fa-address-card share__div__icon"></i> Crear
+        tarjeta</label
+      >
+      <p class="js-msjError msjError"></p>
     </div>
 
+    <div class="sharenone collapsed js__createLink">
+      <label for="" class="sharenone__button"
+        ><i class="fa-regular fa-address-card sharenone__icon"></i> Crear
+        tarjeta</label
+      >
 
+      <div class="sharenone__section">
+        <h2 class="sharenone__section__title">La tarjeta ha sido creada:</h2>
+        <a class="sharenone__section__a js__url" href=""
+          >https://awesome-profile-card.com?id=A456DF0001</a
+        >
+        <a
+          class="sharenone__section__button js-btnTwitter"
+          href=""
+          target="_blank"
+          ><i class="fa-brands fa-twitter sharenone__section__icon"></i
+          >Compartir en twitter</a
+        >
+      </div>
+    </div>
+  </div>
 </fieldset>

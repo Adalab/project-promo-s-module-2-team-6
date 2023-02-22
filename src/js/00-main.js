@@ -1,5 +1,16 @@
+/* eslint-disable indent */
 'use strict';
 
+let data = {
+    palette: "",
+    name: "",
+    job: "",
+    phone: "",
+    email: "",
+    linkedin: "",
+    github: "",
+    photo: "",
+}
 
 
 // llamar legend
@@ -96,21 +107,11 @@ const cardLinkedin = document.querySelector('.js-cardLinkedin');
 const inputGithub = document.querySelector('.js-inputGithub');
 const cardGithub = document.querySelector('.js-cardGithub');
 
-let data = {
-    palette: "",
-    name: "",
-    job: "",
-    phone: "",
-    email: "",
-    linkedin: "",
-    github: "",
-    photo: "",
-  }
 
 
 
 // Evento Nombre
-inputName.addEventListener('keyup' , () => {
+inputName.addEventListener('keyup', () => {
     const nameWritten = inputName.value;
     if (nameWritten === '') {
         cardName.innerHTML = 'Nombre Apellido';
@@ -120,7 +121,7 @@ inputName.addEventListener('keyup' , () => {
     }
 });
 // Evento Empleo
-inputJob.addEventListener('keyup' , () => {
+inputJob.addEventListener('keyup', () => {
     const jobWritten = inputJob.value;
     if (jobWritten === '') {
         cardJob.innerHTML = 'Front-end-developer';
@@ -132,7 +133,7 @@ inputJob.addEventListener('keyup' , () => {
 });
 
 // Evento Email
-inputEmail.addEventListener('keyup' , () => {
+inputEmail.addEventListener('keyup', () => {
     const emailWritten = inputEmail.value;
     cardEmail.href = `mailto:${emailWritten}`;
     data.email = emailWritten;
@@ -140,7 +141,7 @@ inputEmail.addEventListener('keyup' , () => {
 });
 
 //Evento Linkedin
-inputLinkedin.addEventListener('keyup' , () => {
+inputLinkedin.addEventListener('keyup', () => {
     const linkedinWritten = inputLinkedin.value;
     cardLinkedin.href = `https://${linkedinWritten}`;
     data.linkedin = linkedinWritten;
@@ -148,14 +149,14 @@ inputLinkedin.addEventListener('keyup' , () => {
 });
 
 // Evento github
-inputGithub.addEventListener('keyup' , () => {
+inputGithub.addEventListener('keyup', () => {
     const githubWritten = inputGithub.value;
-    cardGithub.href = `https://github.com/${githubWritten.slice(1 , 50)}`;
+    cardGithub.href = `https://github.com/${githubWritten.slice(1, 50)}`;
     data.github = githubWritten;
 });
 
 // Evento telefono
-inputPhone.addEventListener('keyup' , () => {
+inputPhone.addEventListener('keyup', () => {
     const phoneWritten = inputPhone.value;
     cardPhone.href = `tel:${phoneWritten}`;
     data.phone = phoneWritten;

@@ -33,7 +33,7 @@ function dataFetch() {
       console.log(data);
 
       if (data.success === false) {
-        msjError.innerHTML = '*  Te faltan datos por rellenar '
+        msjError.innerHTML = '* Te faltan datos por rellenar ';
       } else {
         msjError.innerHTML = '';
         buttonCard.classList.add('collapsed');

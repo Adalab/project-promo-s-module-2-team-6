@@ -10,7 +10,7 @@ function handleClickReset(ev) {
     inputName.value = '';
     cardName.innerHTML = 'Nombre Apellido';
     inputJob.value = '';
-    cardJob.innerHTML = 'Front-end-developer';
+    cardJob.innerHTML = 'Front-end developer';
     inputEmail.value = '';
     inputLinkedin.value = '';
     inputGithub.value = '';
@@ -20,4 +20,3 @@ function handleClickReset(ev) {
 }
 
 reset.addEventListener('click', handleClickReset);
-

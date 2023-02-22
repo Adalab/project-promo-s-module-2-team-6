@@ -110,9 +110,15 @@ const cardGithub = document.querySelector('.js-cardGithub');
 
 let nameLocal = localStorage.getItem('CardName');
 inputName.value = nameLocal;
+if (nameLocal) {
+    cardName.innerHTML = nameLocal;
+}
 
 let jobLocal = localStorage.getItem('CardJob');
 inputJob.value = jobLocal;
+if (jobLocal) {
+    cardJob.innerHTML = jobLocal;
+}
 
 
 let LinkedinLocal = localStorage.getItem('CardLinkedin');
@@ -145,7 +151,7 @@ inputName.addEventListener('keyup', () => {
 inputJob.addEventListener('keyup', () => {
     const jobWritten = inputJob.value;
     if (jobWritten === '') {
-        cardJob.innerHTML = 'Front-end-developer';
+        cardJob.innerHTML = 'Front-end developer';
     } else {
         cardJob.innerHTML = jobWritten;
         data.job = jobWritten;

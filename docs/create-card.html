@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Título</title>
+  <title>Create your card</title>
   <!-- Google Fonts  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,164 +31,188 @@
   <header class="header-create">
     
       <div class="header-create__logo">
-        <img 
+        <a title= "Página principal" href="index.html"><img 
           class="header-create__image-aweprocar"
           src="./assets/images/logo-awesome-profile-cards.svg"
           alt="Awesome profile-cards"
         >
+      </a>
       </div>
     
     </header>
   <main class="main-create">
+    <section class="preview">
+      <div class="preview__conteiner">
+        <div class="preview__btn">
+          <i class="fa-regular fa-trash-can preview__btn-icon"></i>
+          <a class="preview__btn-reset js-reset" href="">RESET</a>
+        </div>
+        <section class="card js-allcard">
+          <div class="card__cont1">
+            <h2 class="card__cont1-name js-cardName">Nombre Apellido</h2>
+            <h3 class="card__cont1-employ js-cardJob">Front-end developer</h3>
+          </div>
+          <div class="card__cont2-img js__profile-image"></div>
+          <nav class="card__cont3">
+            <a
+              class="card__icon js-cardPhone"
+              title="Enlace al teléfono"
+              href="#"
+            >
+              <i class="card__icon--all fa-solid fa-mobile-screen-button"></i>
+            </a>
+            <a class="card__icon js-cardEmail" title="Enlace al email" href="#">
+              <i class="card__icon--all fa-regular fa-envelope"></i>
+            </a>
+            <a
+              class="card__icon js-cardLinkedin"
+              title="Enlace al Linkedin"
+              href="#"
+              target="_blank"
+            >
+              <i class="card__icon--all fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              class="card__icon js-cardGithub"
+              title="Enlace al Github"
+              href="#"
+              target="_blank"
+            >
+              <i class="card__icon--all fa-brands fa-github-alt"></i>
+            </a>
+          </nav>
+        </section>
+      </div>
+    </section>
 
-      <section class="preview">
+    <form class="form">
+      <fieldset class="desing">
+        <legend class="desing__head js-designLegend" title="Despliega la sección">
+          <div class="desing__head-div">
+            <i class="desing__head-icon fa-regular fa-object-ungroup"></i>
+            <h2 class="desing__head-title">DISEÑA</h2>
+          </div>
+          <i
+            class="desing__head-arrow fas fa-chevron-down js-arrow-design arrow-collapsed"
+          ></i>
+        </legend>
+
+        <section class="desing__contCol js-divDesign">
+          <h3 class="desing__color">COLORES</h3>
+          <section>
+            <article class="palette palleteOne">
+              <input class="js-option1" type="radio" name="colors" checked />
+              <div class="palette__cont col1"></div>
+              <div class="palette__cont col2"></div>
+              <div class="palette__cont col3"></div>
+            </article>
+            <article class="palette paletteTwo">
+              <input class="js-option2" type="radio" name="colors" />
+              <div class="palette__cont col4"></div>
+              <div class="palette__cont col5"></div>
+              <div class="palette__cont col6"></div>
+            </article>
+            <article class="palette paletteThree">
+              <input class="js-option3" type="radio" name="colors" />
+              <div class="palette__cont col7"></div>
+              <div class="palette__cont col8"></div>
+              <div class="palette__cont col9"></div>
+            </article>
+            <article class="palette paletteFour">
+              <input class="js-option4" type="radio" name="colors" />
+              <div class="palette__cont col10"></div>
+              <div class="palette__cont col11"></div>
+              <div class="palette__cont col12"></div>
+            </article>
+          </section>
+        </section>
+      </fieldset>
+
+      <fieldset class="fill">  
+
+      <div class="fill__legend js-fillLegend" title="Despliega la sección">
+              <div class="fill__legend__div">
+                      <i class="far fa-keyboard fill__legend__div__icon"></i>
+                      <h2 class="fill__legend__div__title">Rellena</h2>
+              </div>
+              <i class="fas fa-chevron-down fill__legend__arrow js-arrow-fill"></i>
+      </div>
+
+
+      <div class="fill__div js-divFill collapsed">
+              
+              <label for="firstname" class="fill__div__title">Nombre completo</label>
+              <input class="fill__div__input js-inputName" type=text placeholder="Ej:Sally Jill" id="firstname" name="firstname">
+              
+              <label for="jobposition" class="fill__div__title"> Puesto</label>
+              <input class="fill__div__input js-inputJob" type=text placeholder="Ej:Front-end unicorn" id="jobposition" name="jobposition">
+              
+              <label for="" class="fill__div__title" >Imagen de perfil</label>
+              <section class="fill__div__section">
+                      <label for="photo" class="fill__div__section__button" >Añadir Imagen</label>
+                      <input class="collapsed js__profile-upload-btn" type=file name="photo" id="photo">
+                      <div class="fill__div__section__rectangle js__profile-preview"></div>
+              </section>
+              
+              
+              <label for="email" class="fill__div__title" >Email</label>
+              <input class="fill__div__input js-inputEmail" type=email placeholder="Ej:sally-hill@gmail.com" id="email" name="email">
+              
+              <label for="phone" class="fill__div__title">Teléfono</label>
+              <input class="fill__div__input js-inputPhone" type=number placeholder="Ej: 555-55-55-55" id="phone" name="phone">
+              
+              <label for="linkedig" class="fill__div__title" >Linkedin</label>
+              <input class="fill__div__input js-inputLinkedin" type=text placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" name="linkedin">
+              
+              <label for="github" class="fill__div__title " >Github</label>
+              <input class="fill__div__input js-inputGithub" type=text placeholder="Ej: @sally-hill" id="github" name="github">
+      </div>
+
+      </fieldset>
+      <fieldset class="share">
+        <div class="share__legend js-shareLegend" title="Despliega la sección">
+          <div class="share__legend__div">
+            <i class="fas fa-share-alt share__legend__div__icon"></i>
+            <h2 class="share__legend__div__title">Comparte</h2>
+          </div>
+          <i class="fas fa-chevron-down share__legend__arrow js-arrow-share"></i>
+        </div>
+
+        <div class="share__div js-divShare collapsed">
           <div>
-              <div class="preview__btn">
-                  <i class="fa-regular fa-trash-can preview__btn-icon"></i>
-                  <a class="preview__btn-reset" href="">RESET</a>
-              </div>
-              <section class="card">
-                  <div class="card__cont1">
-                      <h2 class="card__cont1-name js-cardName">Nombre Apellido</h2>
-                      <h3 class="card__cont1-employ js-cardJob">Front-end developer</h3>
-                  </div>
-                  <div class="card__cont2-img"></div>
-                  <nav class="card__cont3">
-                      <a class="card__icon js-cardPhone" href="#">
-                          <i class="card__icon-phone fa-solid fa-mobile-screen-button"></i>
-                      </a>
-                      <a class="card__icon js-cardEmail" href="#">
-                          <i class="card__icon-envelope fa-regular fa-envelope"></i>
-                      </a>
-                      <a class="card__icon js-cardLinkedin" href="#" target="_blank">
-                          <i class="card__icon-linkedin fa-brands fa-linkedin-in"></i>
-                      </a>
-                      <a class="card__icon js-cardGithub" href="#" target="_blank">
-                          <i class="card__icon-github fa-brands fa-github-alt"></i>
-                      </a>
-                  </nav>
-              </section>
-          </div>
-      </section>
-      
-      <form class="form">
-          <fieldset class="desing">
-              <legend class="desing__head js-designLegend">
-                  <div class="desing__head-div">
-                      <i class="desing__head-icon fa-regular fa-object-ungroup"></i>
-                      <h2 class="desing__head-title">DISEÑA</h2>
-                  </div>
-                  <i class="desing__head-arrow fas fa-chevron-down"></i>
-              </legend>
-
-              <section class="desing__contCol js-divDesign">
-                  <h3 class="desing__color">COLORES</h3>
-                  <section>
-                      <article class="palette palleteOne">
-                          <input type="radio" name="colors">
-                          <div class= "palette__cont col1"></div>
-                          <div class= "palette__cont col2"></div>
-                          <div class= "palette__cont col3"></div>
-                      </article>
-                      <article class="palette paletteTwo">
-                          <input type="radio" name="colors">
-                          <div class= "palette__cont col4"></div>
-                          <div class= "palette__cont col5"></div>
-                          <div class= "palette__cont col6"></div>
-                      </article>
-                      <article class="palette paletteThree">
-                          <input type="radio" name="colors">
-                          <div class= "palette__cont col7"></div>
-                          <div class= "palette__cont col8"></div>
-                          <div class= "palette__cont col9"></div>
-                      </article>
-                      <article class="palette paletteFour">
-                          <input type="radio" name="colors">
-                          <div class= "palette__cont col10"></div>
-                          <div class= "palette__cont col11"></div>
-                          <div class= "palette__cont col12"></div>
-                      </article>
-                  </section>
-              </section>
-          </fieldset>
-          <fieldset class="fill">  
-
-          <div class="fill__legend js-fillLegend">
-                  <div class="fill__legend__div">
-                          <i class="far fa-keyboard fill__legend__div__icon"></i>
-                          <h2 class="fill__legend__div__title">Rellena</h2>
-                  </div>
-                  <i class="fas fa-chevron-down fill__legend__arrow"></i>
+            <label for="" class="share__div__button js__buttonCard">
+              <i class="fa-regular fa-address-card share__div__icon"></i> Crear
+              tarjeta</label
+            >
+            <p class="js-msjError msjError"></p>
           </div>
 
+          <div class="sharenone collapsed js__createLink">
+            <label for="" class="sharenone__button"
+              ><i class="fa-regular fa-address-card sharenone__icon"></i> Crear
+              tarjeta</label
+            >
 
-          <div class="fill__div js-divFill">
-                  
-                  <label for="firstname" class="fill__div__title">Nombre completo</label>
-                  <input class="fill__div__input js-inputName" type=text placeholder="Ej:Sally Jill" id="firstname" name="firstname">
-                  
-                  <label for="jobposition" class="fill__div__title"> Puesto</label>
-                  <input class="fill__div__input js-inputJob" type=text placeholder="Ej:Front-end unicorn" id="jobposition" name="jobposition">
-                  
-                  <label for="" class="fill__div__title" >Imagen de perfil</label>
-                  <section class="fill__div__section">
-                          <label for="" class="fill__div__section__button" >Añadir Imagen</label>
-                          <div class="fill__div__section__rectangle"></div>
-                  </section>
-                  
-                  
-                  <label for="email" class="fill__div__title" >Email</label>
-                  <input class="fill__div__input js-inputEmail" type=email placeholder="Ej:sally-hill@gmail.com" id="email" name="email">
-                  
-                  <label for="phone" class="fill__div__title">Teléfono</label>
-                  <input class="fill__div__input js-inputPhone" type=number placeholder="Ej: 555-55-55-55" id="phone" name="phone">
-                  
-                  <label for="linkedig" class="fill__div__title" >Linkedin</label>
-                  <input class="fill__div__input js-inputLinkedin" type=text placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" name="linkedin">
-                  
-                  <label for="github" class="fill__div__title " >Github</label>
-                  <input class="fill__div__input js-inputGithub" type=text placeholder="Ej: @sally-hill" id="github" name="github">
+            <div class="sharenone__section">
+              <h2 class="sharenone__section__title">La tarjeta ha sido creada:</h2>
+              <a class="sharenone__section__a js__url" href=""
+                >https://awesome-profile-card.com?id=A456DF0001</a
+              >
+              <a
+                class="sharenone__section__button js-btnTwitter"
+                href=""
+                target="_blank"
+                ><i class="fa-brands fa-twitter sharenone__section__icon"></i
+                >Compartir en twitter</a
+              >
+            </div>
           </div>
+        </div>
+      </fieldset>
 
-          </fieldset>
-          <fieldset class="share">
-
-              <div class="share__legend js-shareLegend">
-                      <div class="share__legend__div">
-                          <i class="fas fa-share-alt share__legend__div__icon"></i>
-                          <h2 class="share__legend__div__title">Comparte</h2>
-                      </div>
-                      <i class="fas fa-chevron-down share__legend__arrow"></i>
-                  </div>
-
-
-              <div class="share__div js-divShare">
-                  
-                          <label for="" class="share__div__button" ><i class="fa-regular fa-address-card share__div__icon"></i> Crear tarjeta</label>
-              </div>
-
-
-          <!-- 
-              <div class="sharenone">
-
-                          <label for="" class="sharenone__button" ><i class="fa-regular fa-address-card sharenone__icon"></i> Crear tarjeta</label>
-
-                          <div class="sharenone__section">
-                              <h2 class="sharenone__section__title">La tarjeta ha sido creada:</h2>
-                              <a class="sharenone__section__a" href="">https://awesome-profile-card.com?id=A456DF0001</a>
-                              <a class="sharenone__section__button"href=""><i class="fa-brands fa-twitter sharenone__section__icon"></i>Compartir en twitter</a>
-
-                              
-                          </div>
-
-              </div> -->
-
-
-
-
-          </fieldset>
-      </form>
+    </form>
   </main>
+
   <footer class="footer">
 
       <small class="copywrite">Awesome profile-cards @2023</small>

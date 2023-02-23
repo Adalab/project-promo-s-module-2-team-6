@@ -1,4 +1,3 @@
-
 'use strict';
 
 const reset = document.querySelector('.js-reset');
@@ -24,5 +23,4 @@ function handleClickReset(ev) {
     localStorage.setItem('CardJob');
     localStorage.setItem('CardName');
 }
-
 reset.addEventListener('click', handleClickReset);

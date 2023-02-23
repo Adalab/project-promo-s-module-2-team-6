@@ -17,6 +17,12 @@ function handleClickReset(ev) {
     inputPhone.value = '';
     profilePreview.style.backgroundImage = '';
     profileImage.style.backgroundImage = '';
+    localStorage.removeItem('CardPhone');
+    localStorage.removeItem('CardGithub');
+    localStorage.setItem('CardPhone');
+    localStorage.setItem('CardEmail');
+    localStorage.setItem('CardJob');
+    localStorage.setItem('CardName');
 }
 
 reset.addEventListener('click', handleClickReset);

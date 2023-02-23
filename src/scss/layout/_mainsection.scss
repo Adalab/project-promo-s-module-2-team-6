@@ -5,12 +5,10 @@
   padding-top: 40px;
   align-items: center;
   height: calc(70vh - 110px);
-  
-  @media all and (min-width:768px) {
+
+  @media all and (min-width: 768px) {
     height: calc(55vh - 60px);
-    }
-
-
+  }
 
   &__h1 {
     font-family: $font-Merri;
@@ -29,7 +27,7 @@
     margin: 0 20px;
     text-align: center;
     padding-top: 5px;
-     @media all and (min-width:768px) {
+    @media all and (min-width: 768px) {
       max-width: 270px;
     }
   }
@@ -39,13 +37,13 @@
     justify-content: space-around;
     margin: 20px auto;
     padding: 10px 20px 12px 20px;
-    gap:25px;
-     border-radius: 4x;
+    gap: 25px;
+    border-radius: 4x;
     border: solid 1.6px $colorDull-orange;
     width: 270px;
 
-    @media all and (min-width:768px) {
-      margin-bottom: 8vh;
+    @media all and (min-width: 768px) {
+      margin-bottom: 6vh;
     }
   }
 
@@ -61,6 +59,7 @@
     width: 130px;
     font-family: $font-Open;
     font-size: 16px;
+    border-style: none;
   }
 
   &__rectangle__element {
@@ -72,22 +71,18 @@
     height: 48.8px;
     padding: 0 15px;
 
-
     &__img::before {
-     color: $colorDull-orange;
-     display: inline-block;
-     width: 36px ;
-     height: 26px;
-     font-size: 22.4px;
-     text-align: center;
-    }
-    &__p{
-      font-size: 12.8px;
-      font-family:$font-Open;
+      color: $colorDull-orange;
+      display: inline-block;
+      width: 36px;
+      height: 26px;
+      font-size: 22.4px;
       text-align: center;
-    
     }
-
+    &__p {
+      font-size: 12.8px;
+      font-family: $font-Open;
+      text-align: center;
+    }
   }
 }
-

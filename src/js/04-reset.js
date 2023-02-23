@@ -18,9 +18,9 @@ function handleClickReset(ev) {
     profileImage.style.backgroundImage = '';
     localStorage.removeItem('CardPhone');
     localStorage.removeItem('CardGithub');
-    localStorage.setItem('CardPhone');
-    localStorage.setItem('CardEmail');
-    localStorage.setItem('CardJob');
-    localStorage.setItem('CardName');
+    localStorage.removeItem('CardLinkedin');
+    localStorage.removeItem('CardEmail');
+    localStorage.removeItem('CardJob');
+    localStorage.removeItem('CardName');
 }
 reset.addEventListener('click', handleClickReset);

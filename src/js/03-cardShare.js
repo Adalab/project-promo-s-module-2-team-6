@@ -38,6 +38,7 @@ function dataFetch() {
         msjError.innerHTML = '';
         buttonCard.classList.add('collapsed');
         createLink.classList.remove('collapsed');
+        urlCard.href = data.cardURL;
         urlCard.innerHTML = data.cardURL;
         btnTwitter.href = `https://twitter.com/intent/tweet?text=This%20is%20my%20bussiness%20card:&url=${data.cardURL}`;
       }

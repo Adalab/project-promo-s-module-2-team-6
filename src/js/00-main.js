@@ -112,32 +112,38 @@ let nameLocal = localStorage.getItem('CardName');
 inputName.value = nameLocal;
 if (nameLocal) {
     cardName.innerHTML = nameLocal;
+    data.name = nameLocal;
 }
 
 let jobLocal = localStorage.getItem('CardJob');
 inputJob.value = jobLocal;
 if (jobLocal) {
     cardJob.innerHTML = jobLocal;
+    data.job = jobLocal;
 }
 
 
 let LinkedinLocal = localStorage.getItem('CardLinkedin');
 inputLinkedin.value = LinkedinLocal;
+data.linkedin = LinkedinLocal;
 
 
 let phoneLocal = localStorage.getItem('CardPhone');
 inputPhone.value = phoneLocal;
+data.phone = phoneLocal;
 
 
 let emailLocal = localStorage.getItem('CardEmail');
 inputEmail.value = emailLocal;
+data.email = emailLocal;
 
 let githubLocal = localStorage.getItem('CardGithub');
 inputGithub.value = githubLocal;
+data.github = githubLocal;
 
 
 // Evento Nombre
-inputName.addEventListener('keyup', () => {
+inputName.addEventListener('input', () => {
     const nameWritten = inputName.value;
     if (nameWritten === '') {
         cardName.innerHTML = 'Nombre Apellido';
@@ -147,20 +153,23 @@ inputName.addEventListener('keyup', () => {
         localStorage.setItem('CardName', nameWritten);
     }
 });
+
 // Evento Empleo
-inputJob.addEventListener('keyup', () => {
+inputJob.addEventListener('input', () => {
     const jobWritten = inputJob.value;
     if (jobWritten === '') {
         cardJob.innerHTML = 'Front-end developer';
-    } else {
+    }
+    else {
         cardJob.innerHTML = jobWritten;
         data.job = jobWritten;
         localStorage.setItem('CardJob', jobWritten);
     }
 });
 
+
 // Evento Email
-inputEmail.addEventListener('keyup', () => {
+inputEmail.addEventListener('input', () => {
     const emailWritten = inputEmail.value;
     cardEmail.href = `mailto:${emailWritten}`;
     data.email = emailWritten;
@@ -169,25 +178,24 @@ inputEmail.addEventListener('keyup', () => {
 });
 
 //Evento Linkedin
-inputLinkedin.addEventListener('keyup', () => {
+inputLinkedin.addEventListener('input', () => {
     const linkedinWritten = inputLinkedin.value;
-    cardLinkedin.href = `https://${linkedinWritten}`;
-    data.linkedin = linkedinWritten;
+    cardLinkedin.href = `https://${data.linkedin}`;
+    data.linkedin = linkedinWritten.split('/').pop();
     localStorage.setItem('CardLinkedin', linkedinWritten);
-
 
 });
 
 // Evento github
-inputGithub.addEventListener('keyup', () => {
+inputGithub.addEventListener('input', () => {
     const githubWritten = inputGithub.value;
     cardGithub.href = `https://github.com/${githubWritten.slice(1, 50)}`;
-    data.github = githubWritten;
+    data.github = githubWritten.slice(1, 50);
     localStorage.setItem('CardGithub', githubWritten);
 });
 
 // Evento telefono
-inputPhone.addEventListener('keyup', () => {
+inputPhone.addEventListener('input', () => {
     const phoneWritten = inputPhone.value;
     cardPhone.href = `tel:${phoneWritten}`;
     data.phone = phoneWritten;

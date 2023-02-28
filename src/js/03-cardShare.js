@@ -20,7 +20,6 @@ const btnTwitter = document.querySelector('.js-btnTwitter');
 
 
 function dataFetch() {
-
   fetch('https://dev.adalab.es/api/card/', {
     method: 'POST',
     headers: {
@@ -44,4 +43,4 @@ function dataFetch() {
       }
     });
 }
-
+console.log(data);

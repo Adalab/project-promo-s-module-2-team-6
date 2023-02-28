@@ -5,6 +5,7 @@ En este 2º modulo hemos creado una web responsive de terjetas de presentación.
 ## Como funciona la Web:
 1. Comenzamos con la portada de nuestra web donde debemos pulsar al botón de comenzar.
 2. En la siguiente página nos encontramos con los campos para relenar y diseñar nuestra tarjeta, compuesta por:
+ ***
     * Diseña
         - Elegimos la paleta de colores con la que queremos que se muestre nuestra tarjeta.
     * Rellena
@@ -19,7 +20,7 @@ Encima de la tarjeta podemos encontrar el botón reset, donde al presionar se no
 Hemos ido creando diferentes ficheros en los que ir trabajando de forma independiente.
 
 ### Estructura del HTML:
-El HTML lo he dividido en tres secciones, como ya conocemos:
+El HTML lo hemos dividido en tres secciones, como ya conocemos:
 1. Head
 2. Main
 3. Main created: para la parte de crear la tarjeta.
@@ -29,7 +30,7 @@ El HTML lo he dividido en tres secciones, como ya conocemos:
     * Share
 4. Footer
 
-## Lenguajes que hemos utilizado:
+### Lenguajes que hemos utilizado:
 1. Html
 2. Css: con anidación scss.
    * Flexbox

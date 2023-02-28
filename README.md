@@ -4,7 +4,7 @@ En este 2º modulo hemos creado una web responsive de terjetas de presentación.
 
 ## Como funciona la Web:
 1. Comenzamos con la portada de nuestra web donde debemos pulsar al botón de comenzar.
-2. En la siguiente página nos encontramos con los campos para relenar y diseñar nuestra tarjeta, compuesta por:
+2. En la siguiente página nos encontramos con los campos para rellenar y diseñar nuestra tarjeta, compuesta por:
  
     * Diseña
         - Elegimos la paleta de colores con la que queremos que se muestre nuestra tarjeta.

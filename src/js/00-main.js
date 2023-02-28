@@ -180,10 +180,12 @@ inputEmail.addEventListener('input', () => {
 //Evento Linkedin
 inputLinkedin.addEventListener('input', () => {
     const linkedinWritten = inputLinkedin.value;
-    cardLinkedin.href = `https://${data.linkedin}`;
-    data.linkedin = linkedinWritten.split('/').pop();
+    let lastSlashIndex = linkedinWritten.lastIndexOf('/');
+    let linkedinUsername = linkedinWritten.slice(lastSlashIndex + 1);
+    data.linkedin = linkedinUsername;
+    cardLinkedin.href = `https://www.linkedin.com/in/${data.linkedin}`;
     localStorage.setItem('CardLinkedin', linkedinWritten);
-
+    console.log(cardLinkedin);
 });
 
 // Evento github

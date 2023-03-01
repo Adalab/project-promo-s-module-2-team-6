@@ -105,6 +105,8 @@ const inputGithub = document.querySelector(".js-inputGithub");
 const cardGithub = document.querySelector(".js-cardGithub");
 
 let nameLocal = localStorage.getItem("CardName");
+console.log(nameLocal);
+
 inputName.value = nameLocal;
 if (nameLocal) {
   cardName.innerHTML = nameLocal;
@@ -119,20 +121,28 @@ if (jobLocal) {
 }
 
 let LinkedinLocal = localStorage.getItem("CardLinkedin");
-inputLinkedin.value = LinkedinLocal;
-data.linkedin = LinkedinLocal;
+if (LinkedinLocal) {
+  inputLinkedin.value = LinkedinLocal;
+  data.linkedin = LinkedinLocal.slice(16, 100);
+}
 
 let phoneLocal = localStorage.getItem("CardPhone");
-inputPhone.value = phoneLocal;
-data.phone = phoneLocal;
+if (phoneLocal) {
+  inputPhone.value = phoneLocal;
+  data.phone = phoneLocal;
+}
 
 let emailLocal = localStorage.getItem("CardEmail");
-inputEmail.value = emailLocal;
-data.email = emailLocal;
+if (emailLocal) {
+  inputEmail.value = emailLocal;
+  data.email = emailLocal;
+}
 
 let githubLocal = localStorage.getItem("CardGithub");
-inputGithub.value = githubLocal;
-data.github = githubLocal;
+if (githubLocal) {
+  inputGithub.value = githubLocal;
+  data.github = githubLocal.slice(1, 50);
+}
 
 // Evento Nombre
 inputName.addEventListener("input", () => {
@@ -182,7 +192,7 @@ inputGithub.addEventListener("input", () => {
   const githubWritten = inputGithub.value;
   cardGithub.href = `https://github.com/${githubWritten.slice(1, 50)}`;
   data.github = githubWritten.slice(1, 50);
-  localStorage.setItem("CardGithub", data.github);
+  localStorage.setItem("CardGithub", githubWritten);
 });
 
 // Evento telefono

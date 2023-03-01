@@ -1,41 +1,85 @@
-<fieldset class="fill">  
+<fieldset class="fill">
+  <div class="fill__legend js-fillLegend" title="Despliega la sección">
+    <div class="fill__legend__div">
+      <i class="far fa-keyboard fill__legend__div__icon"></i>
+      <h2 class="fill__legend__div__title">Rellena</h2>
+    </div>
+    <i class="fas fa-chevron-down fill__legend__arrow js-arrow-fill"></i>
+  </div>
 
-<div class="fill__legend js-fillLegend" title="Despliega la sección">
-        <div class="fill__legend__div">
-                <i class="far fa-keyboard fill__legend__div__icon"></i>
-                <h2 class="fill__legend__div__title">Rellena</h2>
-        </div>
-        <i class="fas fa-chevron-down fill__legend__arrow js-arrow-fill"></i>
-</div>
+  <div class="fill__div js-divFill collapsed">
+    <label for="firstname" class="fill__div__title">Nombre completo</label>
+    <input
+      class="fill__div__input js-inputName"
+      type="text"
+      placeholder="Ej:Sally Jill"
+      id="firstname"
+      name="firstname"
+      autocomplete="on"
+    />
 
+    <label for="jobposition" class="fill__div__title"> Puesto</label>
+    <input
+      class="fill__div__input js-inputJob"
+      type="text"
+      placeholder="Ej:Front-end unicorn"
+      id="jobposition"
+      name="jobposition"
+      autocomplete="on"
+    />
 
-<div class="fill__div js-divFill collapsed">
-        
-        <label for="firstname" class="fill__div__title">Nombre completo</label>
-        <input class="fill__div__input js-inputName" type=text placeholder="Ej:Sally Jill" id="firstname" name="firstname">
-        
-        <label for="jobposition" class="fill__div__title"> Puesto</label>
-        <input class="fill__div__input js-inputJob" type=text placeholder="Ej:Front-end unicorn" id="jobposition" name="jobposition">
-        
-        <label for="" class="fill__div__title" >Imagen de perfil</label>
-        <section class="fill__div__section">
-                <label for="photo" class="fill__div__section__button" >Añadir Imagen</label>
-                <input class="collapsed js__profile-upload-btn" type=file name="photo" id="photo">
-                <div class="fill__div__section__rectangle js__profile-preview"></div>
-        </section>
-        
-        
-        <label for="email" class="fill__div__title" >Email</label>
-        <input class="fill__div__input js-inputEmail" type=email placeholder="Ej:sally-hill@gmail.com" id="email" name="email">
-        
-        <label for="phone" class="fill__div__title">Teléfono</label>
-        <input class="fill__div__input js-inputPhone" type=number placeholder="Ej: 555-55-55-55" id="phone" name="phone">
-        
-        <label for="linkedig" class="fill__div__title" >Linkedin</label>
-        <input class="fill__div__input js-inputLinkedin" type=text placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" name="linkedin">
-        
-        <label for="github" class="fill__div__title " >Github</label>
-        <input class="fill__div__input js-inputGithub" type=text placeholder="Ej: @sally-hill" id="github" name="github">
-</div>
+    <label for="" class="fill__div__title">Imagen de perfil</label>
+    <section class="fill__div__section">
+      <label for="photo" class="fill__div__section__button"
+        >Añadir Imagen</label
+      >
+      <input
+        class="collapsed js__profile-upload-btn"
+        type="file"
+        name="photo"
+        id="photo"
+      />
+      <div class="fill__div__section__rectangle js__profile-preview"></div>
+    </section>
 
+    <label for="email" class="fill__div__title">Email</label>
+    <input
+      class="fill__div__input js-inputEmail"
+      type="email"
+      placeholder="Ej:sally-hill@gmail.com"
+      id="email"
+      name="email"
+      autocomplete="on"
+    />
+
+    <label for="phone" class="fill__div__title">Teléfono</label>
+    <input
+      class="fill__div__input js-inputPhone"
+      type="number"
+      placeholder="Ej: 555-55-55-55"
+      id="phone"
+      name="phone"
+      autocomplete="on"
+    />
+
+    <label for="linkedig" class="fill__div__title">Linkedin</label>
+    <input
+      class="fill__div__input js-inputLinkedin"
+      type="text"
+      placeholder="Ej: linkedin.com/in/sally.hill"
+      id="linkedin"
+      name="linkedin"
+      autocomplete="on"
+    />
+
+    <label for="github" class="fill__div__title">Github</label>
+    <input
+      class="fill__div__input js-inputGithub"
+      type="text"
+      placeholder="Ej: @sally-hill"
+      id="github"
+      name="github"
+      autocomplete="on"
+    />
+  </div>
 </fieldset>

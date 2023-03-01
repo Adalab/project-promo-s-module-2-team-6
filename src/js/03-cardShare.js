@@ -9,6 +9,7 @@ function handleClickCard(event) {
   //buttonCard.classList.add('collapsed');
   //createLink.classList.remove('collapsed');
   dataFetch();
+
 }
 
 

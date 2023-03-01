@@ -56,11 +56,12 @@ function openFill() {
 function openShare() {
     divShare.classList.remove('collapsed');
     arrowShare.classList.add('arrow-collapsed');
+    //Evento scroll
+    document.getElementById("upArrow").scrollIntoView({ behavior: 'smooth' })
 }
 
 
 // Evento Design 
-
 function handleClikDesign(event) {
     console.log(event.currentTarget);
     closeAlldiv();
@@ -89,14 +90,7 @@ function handleClikShare(event) {
     closeAlldiv();
     openShare();
     arrowShare.classList.toggle("arrow-collapsed");
-    //arrowShare.addEventListener('click', handleUp);
 }
-
-/*function handleUp(ev) {
-   ev.preventDefault();
-   const topElement = document.getElementById("upArrow");
-   topElement.scrollIntoView({ behavior: "smooth" });
-}*/
 
 shareLegend.addEventListener('click', handleClikShare);
 
